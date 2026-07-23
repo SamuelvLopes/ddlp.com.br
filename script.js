@@ -2,17 +2,18 @@ const translations = {
   "pt-BR": {
     skip: "Pular para o manifesto",
     languageNav: "Selecionar idioma",
+    sourceLink: "open source",
     kicker: "Dividendos, Diversão, Lazer e Putaria",
-    title: "DDLP",
-    lede: "Invista mais para depender menos. Reserve dez por cento para aproveitar o caminho.",
-    principleTitle: "O protocolo",
+    title: "ddlp.",
+    lede: "Por favor, não transforme investimento em abstinência permanente.",
+    principleTitle: "O que é?",
     principleBody:
-      "DDLP é uma filosofia simples: investir com agressividade, viver com consciência e não transformar austeridade em virtude absoluta.",
+      "DDLP é um protocolo financeiro simples: invista com constância, mantenha a vida sob controle e separe uma parte pequena da renda para aproveitar o caminho.",
     comparisonTitle: "Não faça isso",
     badYou: "você",
-    badLine1: "vou investir tudo e viver depois",
+    badLine1: "vou investir tudo e viver só depois",
     badLife: "vida",
-    badLine2: "enquanto isso, sua juventude passa",
+    badLine2: "ok, sua juventude está passando",
     badYouAgain: "você",
     badLine3: "tenho patrimônio, mas não tenho história",
     insteadTitle: "Faça isso",
@@ -29,7 +30,10 @@ const translations = {
     rule2: "Sem vender patrimônio produtivo por impulso.",
     rule3: "Sem culpa quando o plano principal está sendo respeitado.",
     rule4: "Mais renda e mais dividendos permitem mais DDLP.",
-    manifestoTitle: "Manifesto",
+    whyTitle: "Por quê?",
+    whyBody:
+      "Porque uma estratégia de longo prazo precisa ser suportável no longo prazo. Os dez por cento são o combustível emocional da jornada.",
+    manifestoTitle: "Manifesto curto",
     manifesto1:
       "Patrimônio sem vida não é liberdade. Investimento não deve ser uma punição adiada por décadas.",
     manifesto2:
@@ -40,6 +44,7 @@ const translations = {
     pledgeBody:
       "Investir com constância. Reinvestir o suficiente para continuar crescendo. Gastar o suficiente para lembrar por que estamos crescendo.",
     tagline: "DDLP: investir para curtir, curtir para continuar investindo.",
+    sourceFooter: "Este site é open source.",
     note: "Conteúdo filosófico, não recomendação financeira.",
     description:
       "DDLP: Dividendos, Diversão, Lazer e Putaria. Um protocolo financeiro para investir com constância e aproveitar o caminho.",
@@ -47,17 +52,18 @@ const translations = {
   en: {
     skip: "Skip to the manifesto",
     languageNav: "Select language",
+    sourceLink: "open source",
     kicker: "Dividends, Fun, Leisure and Pleasure",
-    title: "DDLP",
-    lede: "Invest more to depend less. Reserve ten percent to enjoy the way there.",
-    principleTitle: "The protocol",
+    title: "ddlp.",
+    lede: "Please do not turn investing into permanent abstinence.",
+    principleTitle: "What is it?",
     principleBody:
-      "DDLP is a simple philosophy: invest aggressively, live consciously, and do not turn austerity into an absolute virtue.",
+      "DDLP is a simple financial protocol: invest consistently, keep life under control, and set aside a small part of your income to enjoy the way there.",
     comparisonTitle: "Do not do this",
     badYou: "you",
-    badLine1: "I will invest everything and live later",
+    badLine1: "I will invest everything and live only later",
     badLife: "life",
-    badLine2: "meanwhile, your youth is passing",
+    badLine2: "ok, your youth is passing",
     badYouAgain: "you",
     badLine3: "I have assets, but no stories",
     insteadTitle: "Do this",
@@ -74,7 +80,10 @@ const translations = {
     rule2: "No impulsive sale of productive assets.",
     rule3: "No guilt when the main plan is respected.",
     rule4: "More income and more dividends allow more DDLP.",
-    manifestoTitle: "Manifesto",
+    whyTitle: "Why?",
+    whyBody:
+      "Because a long-term strategy needs to be bearable over the long term. The ten percent is the emotional fuel for the journey.",
+    manifestoTitle: "Short manifesto",
     manifesto1:
       "Wealth without life is not freedom. Investing should not feel like a punishment deferred for decades.",
     manifesto2:
@@ -85,6 +94,7 @@ const translations = {
     pledgeBody:
       "Invest consistently. Reinvest enough to keep growing. Spend enough to remember why we are growing.",
     tagline: "DDLP: invest to enjoy, enjoy to keep investing.",
+    sourceFooter: "This site is open source.",
     note: "Philosophical content, not financial advice.",
     description:
       "DDLP: Dividends, Fun, Leisure and Pleasure. A financial protocol for investing consistently and enjoying the way there.",
@@ -92,17 +102,18 @@ const translations = {
   es: {
     skip: "Saltar al manifiesto",
     languageNav: "Seleccionar idioma",
+    sourceLink: "open source",
     kicker: "Dividendos, Diversión, Ocio y Placer",
-    title: "DDLP",
-    lede: "Invierte más para depender menos. Reserva diez por ciento para disfrutar el camino.",
-    principleTitle: "El protocolo",
+    title: "ddlp.",
+    lede: "Por favor, no conviertas la inversión en abstinencia permanente.",
+    principleTitle: "¿Qué es?",
     principleBody:
-      "DDLP es una filosofía simple: invertir agresivamente, vivir con conciencia y no convertir la austeridad en una virtud absoluta.",
+      "DDLP es un protocolo financiero simple: invierte con constancia, mantén la vida bajo control y separa una pequeña parte del ingreso para disfrutar el camino.",
     comparisonTitle: "No hagas esto",
     badYou: "tú",
-    badLine1: "voy a invertir todo y vivir después",
+    badLine1: "voy a invertir todo y vivir solo después",
     badLife: "vida",
-    badLine2: "mientras tanto, tu juventud pasa",
+    badLine2: "ok, tu juventud está pasando",
     badYouAgain: "tú",
     badLine3: "tengo patrimonio, pero no tengo historias",
     insteadTitle: "Haz esto",
@@ -119,7 +130,10 @@ const translations = {
     rule2: "Sin vender patrimonio productivo por impulso.",
     rule3: "Sin culpa cuando el plan principal se respeta.",
     rule4: "Más ingresos y más dividendos permiten más DDLP.",
-    manifestoTitle: "Manifiesto",
+    whyTitle: "¿Por qué?",
+    whyBody:
+      "Porque una estrategia de largo plazo necesita ser soportable en el largo plazo. El diez por ciento es el combustible emocional del camino.",
+    manifestoTitle: "Manifiesto corto",
     manifesto1:
       "Patrimonio sin vida no es libertad. Invertir no debe ser un castigo aplazado durante décadas.",
     manifesto2:
@@ -130,6 +144,7 @@ const translations = {
     pledgeBody:
       "Invertir con constancia. Reinvertir lo suficiente para seguir creciendo. Gastar lo suficiente para recordar por qué estamos creciendo.",
     tagline: "DDLP: invertir para disfrutar, disfrutar para seguir invirtiendo.",
+    sourceFooter: "Este sitio es open source.",
     note: "Contenido filosófico, no recomendación financiera.",
     description:
       "DDLP: Dividendos, Diversión, Ocio y Placer. Un protocolo financiero para invertir con constancia y disfrutar el camino.",
