@@ -31,6 +31,7 @@ const translations = {
     alreadyThere: "Objetivo alcançado", unavailable: "Não estimável", yearsMonths: "{years} ano(s) e {months} mês(es)", monthsOnly: "{months} mês(es)",
     youthEyebrow: "A juventude também é um ativo", youthQuote: "“O mercado recompensa o dinheiro investido no tempo. A vida também recompensa as experiências vividas no tempo certo.”",
     youthBody: "Algumas aventuras exigem uma energia que não pode ser acumulada para depois. O DDLP protege o futuro sem abandonar o presente.",
+    youthProvocation: "“A preocupação dele era com o amanhã. Ele morreu esta noite.”",
     manifestoEyebrow: "Manifesto DDLP", manifestoTitle: "Investir para curtir.\nCurtir para continuar investindo.",
     manifesto1: "Não queremos chegar ricos à aposentadoria e pobres de experiências.", manifesto2: "O investidor não deve abandonar a vida para construir patrimônio.",
     manifesto3: "Dividendos são pequenas parcelas de liberdade.", manifesto4: "O prazer planejado fortalece a disciplina.", manifesto5: "Quem quer curtir mais precisa construir mais.",
@@ -41,7 +42,7 @@ const translations = {
     ddlp3: "Transforma dividendos em liberdade", ddlp4: "Equilibra presente e futuro",
     finalEyebrow: "Invest to Live", finalTitle: "Construa patrimônio sem abandonar a própria vida.", finalText: "O DDLP não é uma desculpa para gastar mais. É um sistema para investir melhor, viver com consciência e continuar motivado durante toda a jornada.",
     startDDLP: "Começar meu DDLP", readFull: "Ler o manifesto", finalTagline: "DDLP — Investir para curtir. Curtir para continuar investindo.",
-    footerPhilosophy: "Dividendos, Diversão, Lazer e Putaria.\nIrreverência com responsabilidade financeira.", project: "Projeto", githubLink: "Código aberto no GitHub ↗",
+    footerPhilosophy: "Dividendos, Diversão, Lazer e Paixões.\nIrreverência com responsabilidade financeira.", project: "Projeto", githubLink: "Código aberto no GitHub ↗",
     disclaimer: "O Protocolo DDLP é uma filosofia de organização financeira e qualidade de vida. O conteúdo apresentado possui caráter educacional e não constitui recomendação de investimento.",
     description: "DDLP Protocol — uma filosofia para investir agressivamente e viver conscientemente."
   },
@@ -77,6 +78,7 @@ const translations = {
     alreadyThere: "Goal reached", unavailable: "Not estimable", yearsMonths: "{years} year(s) and {months} month(s)", monthsOnly: "{months} month(s)",
     youthEyebrow: "Youth is also an asset", youthQuote: "“The market rewards money invested over time. Life also rewards experiences lived at the right time.”",
     youthBody: "Some adventures require energy that cannot be saved for later. DDLP protects the future without abandoning the present.",
+    youthProvocation: "“He was worried about tomorrow. He died tonight.”",
     manifestoEyebrow: "DDLP manifesto", manifestoTitle: "Invest to enjoy.\nEnjoy to keep investing.",
     manifesto1: "We do not want to reach retirement rich in money and poor in experiences.", manifesto2: "Investors should not abandon life to build wealth.",
     manifesto3: "Dividends are small installments of freedom.", manifesto4: "Planned pleasure strengthens discipline.", manifesto5: "Those who want to enjoy more need to build more.",
@@ -87,7 +89,7 @@ const translations = {
     ddlp3: "Turns dividends into freedom", ddlp4: "Balances present and future",
     finalEyebrow: "Invest to Live", finalTitle: "Build wealth without abandoning your own life.", finalText: "DDLP is not an excuse to spend more. It is a system to invest better, live consciously, and stay motivated throughout the journey.",
     startDDLP: "Start my DDLP", readFull: "Read the manifesto", finalTagline: "DDLP — Invest to enjoy. Enjoy to keep investing.",
-    footerPhilosophy: "Dividends, Fun, Leisure and Pleasure.\nIrreverence with financial responsibility.", project: "Project", githubLink: "Open source on GitHub ↗",
+    footerPhilosophy: "Dividends, Fun, Leisure and Passions.\nIrreverence with financial responsibility.", project: "Project", githubLink: "Open source on GitHub ↗",
     disclaimer: "The DDLP Protocol is a philosophy of financial organization and quality of life. This content is educational and does not constitute investment advice.",
     description: "DDLP Protocol — a philosophy for investing aggressively and living consciously."
   },
@@ -123,6 +125,7 @@ const translations = {
     alreadyThere: "Objetivo alcanzado", unavailable: "No estimable", yearsMonths: "{years} año(s) y {months} mes(es)", monthsOnly: "{months} mes(es)",
     youthEyebrow: "La juventud también es un activo", youthQuote: "“El mercado recompensa el dinero invertido en el tiempo. La vida también recompensa las experiencias vividas en el momento adecuado.”",
     youthBody: "Algunas aventuras exigen una energía que no se puede guardar para después. DDLP protege el futuro sin abandonar el presente.",
+    youthProvocation: "“Su preocupación era el mañana. Murió esta noche.”",
     manifestoEyebrow: "Manifiesto DDLP", manifestoTitle: "Invertir para disfrutar.\nDisfrutar para seguir invirtiendo.",
     manifesto1: "No queremos llegar ricos a la jubilación y pobres de experiencias.", manifesto2: "El inversor no debe abandonar la vida para construir patrimonio.",
     manifesto3: "Los dividendos son pequeñas cuotas de libertad.", manifesto4: "El placer planificado fortalece la disciplina.", manifesto5: "Quien quiere disfrutar más necesita construir más.",
@@ -133,7 +136,7 @@ const translations = {
     ddlp3: "Transforma dividendos en libertad", ddlp4: "Equilibra presente y futuro",
     finalEyebrow: "Invest to Live", finalTitle: "Construye patrimonio sin abandonar tu propia vida.", finalText: "DDLP no es una excusa para gastar más. Es un sistema para invertir mejor, vivir con conciencia y mantener la motivación durante todo el camino.",
     startDDLP: "Empezar mi DDLP", readFull: "Leer el manifiesto", finalTagline: "DDLP — Invertir para disfrutar. Disfrutar para seguir invirtiendo.",
-    footerPhilosophy: "Dividendos, Diversión, Ocio y Placer.\nIrreverencia con responsabilidad financiera.", project: "Proyecto", githubLink: "Código abierto en GitHub ↗",
+    footerPhilosophy: "Dividendos, Diversión, Ocio y Pasiones.\nIrreverencia con responsabilidad financiera.", project: "Proyecto", githubLink: "Código abierto en GitHub ↗",
     disclaimer: "El Protocolo DDLP es una filosofía de organización financiera y calidad de vida. Este contenido es educativo y no constituye una recomendación de inversión.",
     description: "DDLP Protocol — una filosofía para invertir agresivamente y vivir conscientemente."
   }
