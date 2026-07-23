@@ -3,114 +3,400 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="DDLP: Dividendos, Diversão, Lazer e Putaria. Um protocolo financeiro para investir com constância e aproveitar o caminho."
-    >
-    <meta property="og:title" content="DDLP">
-    <meta
-      property="og:description"
-      content="Investir para curtir, curtir para continuar investindo."
-    >
+    <meta name="theme-color" content="#080a09">
+    <meta name="description" content="DDLP Protocol — uma filosofia para investir agressivamente e viver conscientemente.">
+    <meta property="og:title" content="DDLP Protocol — Invest to Live">
+    <meta property="og:description" content="Investir para curtir. Curtir para continuar investindo.">
     <meta property="og:type" content="website">
-    <title>DDLP</title>
+    <meta property="og:image" content="assets/ddlp-hero.png">
+    <title>DDLP Protocol — Invest to Live</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#manifesto" data-i18n="skip">Pular para o manifesto</a>
+    <a class="skip-link" href="#content" data-i18n="skip">Pular para o conteúdo</a>
 
     <header class="site-header">
-      <a class="source-link" href="https://github.com/SamuelvLopes/ddlp.com.br" rel="me" data-i18n="sourceLink">
-        open source
-      </a>
-      <nav class="language-switcher" aria-label="Selecionar idioma" data-i18n-aria-label="languageNav">
-        <button type="button" data-lang="pt-BR" aria-pressed="true">PT-BR</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      <a class="brand" href="#top" aria-label="DDLP Protocol">DDLP<span>.</span></a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria-label="mainNav">
+        <a href="#protocol" data-i18n="navProtocol">Protocolo</a>
+        <a href="#tools" data-i18n="navTools">Ferramentas</a>
+        <a href="#manifesto" data-i18n="navManifesto">Manifesto</a>
       </nav>
+      <div class="header-actions">
+        <a class="source-link" href="https://github.com/SamuelvLopes/ddlp.com.br" target="_blank" rel="noopener me">
+          <span class="source-mark" aria-hidden="true">⌘</span>
+          <span data-i18n="openSource">Open source</span>
+        </a>
+        <nav class="language-switcher" aria-label="Selecionar idioma" data-i18n-aria-label="languageNav">
+          <button type="button" data-lang="pt-BR" aria-pressed="true">PT</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </nav>
+      </div>
     </header>
 
-    <main id="manifesto" class="page">
-      <section class="hero" aria-labelledby="title">
-        <p class="kicker" data-i18n="kicker">Dividendos, Diversão, Lazer e Putaria</p>
-        <h1 id="title" data-i18n="title">ddlp.</h1>
-        <p class="lede" data-i18n="lede">
-          Por favor, não transforme investimento em abstinência permanente.
-        </p>
-      </section>
-
-      <section class="principle" aria-labelledby="principle-title">
-        <h2 id="principle-title" data-i18n="principleTitle">O que é?</h2>
-        <p data-i18n="principleBody">
-          DDLP é um protocolo financeiro simples: invista com constância, mantenha a vida sob controle e separe uma parte pequena da renda para aproveitar o caminho.
-        </p>
-      </section>
-
-      <section class="comparison" aria-labelledby="comparison-title">
-        <h2 id="comparison-title" data-i18n="comparisonTitle">Não faça isso</h2>
-        <div class="example bad">
-          <p><span data-i18n="badYou">você</span>: <strong data-i18n="badLine1">vou investir tudo e viver só depois</strong></p>
-          <p><span data-i18n="badLife">vida</span>: <span data-i18n="badLine2">ok, sua juventude está passando</span></p>
-          <p><span data-i18n="badYouAgain">você</span>: <span data-i18n="badLine3">tenho patrimônio, mas não tenho história</span></p>
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="hero-content wrap">
+          <p class="eyebrow" data-i18n="heroEyebrow">Protocolo financeiro independente · Brasil</p>
+          <h1>DDLP <span>Protocol</span></h1>
+          <p class="hero-subtitle">Invest to Live<span>.</span></p>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Uma filosofia para quem quer investir agressivamente, aumentar seus dividendos e aproveitar a vida sem destruir o próprio futuro.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#protocol" data-i18n="meetProtocol">Conheça o protocolo</a>
+            <a class="button button-secondary" href="#manifesto" data-i18n="readManifesto">Leia o manifesto</a>
+          </div>
+          <blockquote data-i18n="heroQuote">“Patrimônio sem vida não é liberdade.”</blockquote>
         </div>
+        <a class="scroll-cue" href="#problem" aria-label="Rolar para o conteúdo" data-i18n-aria-label="scrollLabel">↓</a>
+      </section>
 
-        <h2 data-i18n="insteadTitle">Faça isso</h2>
-        <div class="example good">
-          <p><span data-i18n="goodYou">você</span>: <strong data-i18n="goodLine1">90% constrói, 10% vive</strong></p>
-          <p><span data-i18n="goodPortfolio">carteira</span>: <span data-i18n="goodLine2">os aportes continuam</span></p>
-          <p><span data-i18n="goodLife">vida</span>: <span data-i18n="goodLine3">os dividendos começam a pagar experiências</span></p>
+      <section class="problem band" id="problem">
+        <div class="wrap">
+          <p class="section-index">01 / 08</p>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="problemEyebrow">O falso dilema</p>
+            <h2 data-i18n="problemTitle">Você não precisa escolher entre o futuro e o agora.</h2>
+          </div>
+          <div class="extremes">
+            <article>
+              <span class="extreme-number">01</span>
+              <h3 data-i18n="impulsiveTitle">Gastar tudo agora</h3>
+              <p data-i18n="impulsiveText">Prazer imediato, dívida crescente e nenhum patrimônio para comprar liberdade depois.</p>
+            </article>
+            <div class="or" data-i18n="or">ou</div>
+            <article>
+              <span class="extreme-number">02</span>
+              <h3 data-i18n="extremistTitle">Viver apenas depois</h3>
+              <p data-i18n="extremistText">Décadas de acumulação, culpa ao gastar e experiências sempre adiadas.</p>
+            </article>
+          </div>
+          <div class="third-way">
+            <p data-i18n="thirdWayLabel">O terceiro caminho</p>
+            <strong data-i18n="thirdWay">Acumulação agressiva com prazer planejado.</strong>
+          </div>
         </div>
       </section>
 
-      <section class="rules" aria-labelledby="rules-title">
-        <h2 id="rules-title" data-i18n="rulesTitle">A regra dos dez por cento</h2>
-        <p data-i18n="rulesIntro">
-          Aproximadamente 10% da renda mensal vai para diversão, lazer, desejos e experiências pessoais.
-        </p>
-        <ul>
-          <li data-i18n="rule1">Sem dívida para financiar prazer.</li>
-          <li data-i18n="rule2">Sem vender patrimônio produtivo por impulso.</li>
-          <li data-i18n="rule3">Sem culpa quando o plano principal está sendo respeitado.</li>
-          <li data-i18n="rule4">Mais renda e mais dividendos permitem mais DDLP.</li>
-        </ul>
+      <section class="ratio band" id="protocol">
+        <div class="wrap">
+          <p class="section-index">02 / 08</p>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="ratioEyebrow">O princípio</p>
+            <h2 data-i18n="ratioTitle">10% da renda.<br>100% dos dividendos.</h2>
+            <p data-i18n="ratioIntro">Uma metodologia de construção: o DDLP cresce junto com a renda ativa e com os resultados do patrimônio.</p>
+          </div>
+
+          <div class="ratio-visual" role="img" aria-label="10% do salário mais 100% dos dividendos formam o saldo DDLP" data-i18n-aria-label="ratioAria">
+            <div class="ratio-ddlp">
+              <strong data-count="10">10%</strong>
+              <span data-i18n="ratioSalary">Salário + renda extra</span>
+            </div>
+            <div class="ratio-structure">
+              <strong data-count="100">100%</strong>
+              <span data-i18n="ratioDividends">Dividendos e rendimentos</span>
+            </div>
+          </div>
+
+          <div class="ratio-copy">
+            <p data-i18n="ratioBody">O saldo DDLP recebe aproximadamente 10% do salário e da renda extra, mais 100% dos dividendos e rendimentos destinados ao protocolo. O restante da renda ativa continua cuidando da vida real:</p>
+            <ul class="responsibility-list">
+              <li data-i18n="essential">Despesas essenciais</li>
+              <li data-i18n="family">Responsabilidades familiares</li>
+              <li data-i18n="debts">Pagamento de dívidas</li>
+              <li data-i18n="reserve">Reserva de emergência</li>
+              <li data-i18n="investments">Investimentos e patrimônio</li>
+            </ul>
+          </div>
+          <p class="note-callout" data-i18n="ratioNote">Esse saldo não precisa ser gasto. Ele é apenas o valor que você pode usar sem culpa — ou acumular para uma experiência maior.</p>
+        </div>
       </section>
 
-      <section class="why" aria-labelledby="why-title">
-        <h2 id="why-title" data-i18n="whyTitle">Por quê?</h2>
-        <p data-i18n="whyBody">
-          Porque uma estratégia de longo prazo precisa ser suportável no longo prazo. Os dez por cento são o combustível emocional da jornada.
-        </p>
+      <section class="cycle band">
+        <div class="wrap">
+          <p class="section-index">03 / 08</p>
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="cycleEyebrow">O ciclo DDLP</p>
+            <h2 data-i18n="cycleTitle">Quanto maior o patrimônio, maior a liberdade de viver.</h2>
+          </div>
+          <ol class="cycle-flow">
+            <li><span>01</span><strong data-i18n="cycleWork">Trabalhar</strong></li>
+            <li><span>02</span><strong data-i18n="cycleEarn">Ganhar</strong></li>
+            <li><span>03</span><strong data-i18n="cycleInvest">Investir</strong></li>
+            <li><span>04</span><strong data-i18n="cycleReceive">Receber dividendos</strong></li>
+            <li><span>05</span><strong data-i18n="cycleEnjoy">Aproveitar resultados</strong></li>
+            <li><span>06</span><strong data-i18n="cycleMotivate">Aumentar a motivação</strong></li>
+          </ol>
+          <p class="cycle-return" data-i18n="cycleReturn">e investir ainda mais ↗</p>
+        </div>
       </section>
 
-      <section class="manifesto">
-        <h2 data-i18n="manifestoTitle">Manifesto curto</h2>
-        <p data-i18n="manifesto1">
-          Patrimônio sem vida não é liberdade. Investimento não deve ser uma punição adiada por décadas.
-        </p>
-        <p data-i18n="manifesto2">
-          O objetivo não é construir uma carteira para olhar. O objetivo é construir uma carteira capaz de sustentar uma vida melhor.
-        </p>
-        <p data-i18n="manifesto3">
-          A juventude também é um ativo. Existem experiências que não devem ser empurradas indefinidamente para a aposentadoria.
-        </p>
+      <section class="experiences band">
+        <div class="wrap">
+          <p class="section-index">04 / 08</p>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="experiencesEyebrow">Dividendos que viram experiências</p>
+            <h2 data-i18n="experiencesTitle">Uma carteira não é um placar. É uma máquina de financiar liberdade.</h2>
+          </div>
+          <div class="schedule">
+            <article>
+              <p class="schedule-frequency" data-i18n="simpleFrequency">A cada duas semanas</p>
+              <h3 data-i18n="simpleTitle">DDLP Simples</h3>
+              <p data-i18n="simpleText">Experiências locais, acessíveis e diferentes para aproveitar o caminho com frequência.</p>
+            </article>
+            <article>
+              <p class="schedule-frequency" data-i18n="complexFrequency">Quatro vezes por ano</p>
+              <h3 data-i18n="complexTitle">DDLP Complexo</h3>
+              <p data-i18n="complexText">Aventuras maiores, como viagens, pernoites e experiências que pedem planejamento.</p>
+            </article>
+            <p class="schedule-rule" data-i18n="scheduleRule">Quando os dois caem na mesma data, vale apenas o DDLP Complexo.</p>
+          </div>
+          <div class="experience-grid">
+            <article>
+              <span class="experience-icon">01</span>
+              <h3 data-i18n="dinner">Um jantar</h3>
+              <p data-i18n="dinnerText">Dividendos do mês pagando a mesa sem tocar no patrimônio.</p>
+            </article>
+            <article>
+              <span class="experience-icon">02</span>
+              <h3 data-i18n="trip">Uma viagem</h3>
+              <p data-i18n="tripText">Rendimentos acumulados transformados em uma memória real.</p>
+            </article>
+            <article>
+              <span class="experience-icon">03</span>
+              <h3 data-i18n="hobby">Um hobby</h3>
+              <p data-i18n="hobbyText">Renda passiva devolvendo tempo e ampliando possibilidades.</p>
+            </article>
+            <article>
+              <span class="experience-icon">04</span>
+              <h3 data-i18n="freedom">Mais liberdade</h3>
+              <p data-i18n="freedomText">Mais renda e dividendos, mais espaço para viver sem dívida.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="pledge" aria-labelledby="pledge-title">
-        <h2 id="pledge-title" data-i18n="pledgeTitle">Compromisso DDLP</h2>
-        <p data-i18n="pledgeBody">
-          Investir com constância. Reinvestir o suficiente para continuar crescendo. Gastar o suficiente para lembrar por que estamos crescendo.
-        </p>
+      <section class="rules band">
+        <div class="wrap">
+          <p class="section-index">05 / 08</p>
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="rulesEyebrow">As regras</p>
+            <h2 data-i18n="rulesTitle">Prazer planejado.<br>Disciplina preservada.</h2>
+          </div>
+          <ol class="rule-list">
+            <li><span>01</span><p data-i18n="rule1">O lazer deve estar previsto no orçamento.</p></li>
+            <li><span>02</span><p data-i18n="rule2">Nunca use empréstimos para financiar diversão.</p></li>
+            <li><span>03</span><p data-i18n="rule3">Não venda patrimônio produtivo por impulso.</p></li>
+            <li><span>04</span><p data-i18n="rule4">Não sacrifique a reserva ou necessidades essenciais.</p></li>
+            <li><span>05</span><p data-i18n="rule5">Reinvista o suficiente para continuar crescendo.</p></li>
+            <li><span>06</span><p data-i18n="rule6">Gastar é opcional; acumular o saldo também faz parte.</p></li>
+            <li><span>07</span><p data-i18n="rule7">Eleve o lazer quando renda ou dividendos crescerem.</p></li>
+            <li><span>08</span><p data-i18n="rule8">Não sinta culpa ao gastar o valor planejado.</p></li>
+            <li><span>09</span><p data-i18n="rule9">Priorize experiências reais, não ostentação.</p></li>
+            <li><span>10</span><p data-i18n="rule10">Invista para viver, não viva apenas para investir.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="tools band" id="tools">
+        <div class="wrap">
+          <p class="section-index">06 / 08</p>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="toolsEyebrow">Do conceito ao orçamento</p>
+            <h2 data-i18n="toolsTitle">Calcule sua liberdade.</h2>
+            <p data-i18n="toolsIntro">Use valores mensais. As estimativas são educativas e não garantem rentabilidade.</p>
+          </div>
+
+          <div class="calculator" id="budget-calculator">
+            <div class="calculator-head">
+              <p class="tool-number">01</p>
+              <div>
+                <h3 data-i18n="budgetTitle">Calculadora DDLP</h3>
+                <p data-i18n="budgetSubtitle">Veja quanto você pode gastar sem culpa — ou acumular.</p>
+              </div>
+            </div>
+            <form class="calculator-grid" data-calculator="budget">
+              <div class="fields">
+                <label>
+                  <span data-i18n="netSalary">Salário líquido</span>
+                  <span class="input-wrap"><span>R$</span><input id="salary" type="number" min="0" step="100" value="10000" inputmode="decimal"></span>
+                </label>
+                <label>
+                  <span data-i18n="extraIncome">Renda extra</span>
+                  <span class="input-wrap"><span>R$</span><input id="extra" type="number" min="0" step="100" value="0" inputmode="decimal"></span>
+                </label>
+                <label>
+                  <span data-i18n="monthlyDividends">Dividendos mensais</span>
+                  <span class="input-wrap"><span>R$</span><input id="dividends" type="number" min="0" step="50" value="500" inputmode="decimal"></span>
+                </label>
+                <label>
+                  <span><span data-i18n="desiredPercent">Percentual da renda ativa</span> <output id="percent-output">10%</output></span>
+                  <input id="percentage" class="range" type="range" min="1" max="30" value="10">
+                </label>
+              </div>
+              <div class="results" aria-live="polite">
+                <p class="result-label" data-i18n="monthlyBudget">Saldo DDLP disponível no mês</p>
+                <strong class="result-main" id="budget-result">R$ 1.500</strong>
+                <div class="result-grid">
+                  <div><span data-i18n="remaining">Renda ativa para demais compromissos</span><strong id="remaining-result">R$ 9.000</strong></div>
+                  <div><span data-i18n="dividendCoverage">Parcela formada por dividendos</span><strong id="coverage-result">33%</strong></div>
+                  <div><span data-i18n="threeMonths">Saldo em 3 meses</span><strong id="three-result">R$ 4.500</strong></div>
+                  <div><span data-i18n="sixMonths">Saldo em 6 meses</span><strong id="six-result">R$ 9.000</strong></div>
+                  <div><span data-i18n="twelveMonths">Saldo em 12 meses</span><strong id="twelve-result">R$ 18.000</strong></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="calculator" id="freedom-calculator">
+            <div class="calculator-head">
+              <p class="tool-number">02</p>
+              <div>
+                <h3 data-i18n="freedomCalcTitle">Simulador de dividendos e liberdade</h3>
+                <p data-i18n="freedomCalcSubtitle">Estime o patrimônio capaz de financiar seu DDLP.</p>
+              </div>
+            </div>
+            <form class="calculator-grid" data-calculator="freedom">
+              <div class="fields">
+                <label>
+                  <span data-i18n="investedAssets">Patrimônio investido</span>
+                  <span class="input-wrap"><span>R$</span><input id="assets" type="number" min="0" step="1000" value="100000" inputmode="decimal"></span>
+                </label>
+                <label>
+                  <span data-i18n="monthlyContribution">Aporte mensal</span>
+                  <span class="input-wrap"><span>R$</span><input id="contribution" type="number" min="0" step="100" value="2000" inputmode="decimal"></span>
+                </label>
+                <label>
+                  <span data-i18n="averageYield">Rendimento médio anual</span>
+                  <span class="input-wrap suffix"><input id="yield-rate" type="number" min="0.1" max="100" step="0.1" value="8" inputmode="decimal"><span>%</span></span>
+                </label>
+                <label>
+                  <span data-i18n="monthlyGoal">Objetivo DDLP mensal</span>
+                  <span class="input-wrap"><span>R$</span><input id="goal" type="number" min="0" step="100" value="1000" inputmode="decimal"></span>
+                </label>
+              </div>
+              <div class="results freedom-results" aria-live="polite">
+                <p class="result-label" data-i18n="neededAssets">Patrimônio estimado necessário</p>
+                <strong class="result-main" id="needed-result">R$ 150.000</strong>
+                <p class="result-sentence" id="freedom-message"></p>
+                <div class="progress-track" aria-hidden="true"><span id="freedom-progress"></span></div>
+                <div class="result-grid">
+                  <div><span data-i18n="currentMonthlyIncome">Renda mensal estimada hoje</span><strong id="income-now-result">R$ 667</strong></div>
+                  <div><span data-i18n="goalProgress">Progresso do objetivo</span><strong id="goal-progress-result">67%</strong></div>
+                  <div><span data-i18n="estimatedTime">Tempo estimado com aportes</span><strong id="time-result">1 ano e 8 meses</strong></div>
+                </div>
+              </div>
+            </form>
+            <p class="calculator-disclaimer" data-i18n="calcDisclaimer">Estimativa simplificada, antes de impostos e inflação. Rentabilidade passada ou projetada não é garantia de resultado.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="youth band">
+        <div class="youth-image" aria-hidden="true"></div>
+        <div class="wrap youth-content">
+          <p class="section-index">07 / 08</p>
+          <p class="eyebrow" data-i18n="youthEyebrow">A juventude também é um ativo</p>
+          <blockquote data-i18n="youthQuote">“O mercado recompensa o dinheiro investido no tempo. A vida também recompensa as experiências vividas no tempo certo.”</blockquote>
+          <p data-i18n="youthBody">Algumas aventuras exigem uma energia que não pode ser acumulada para depois. O DDLP protege o futuro sem abandonar o presente.</p>
+        </div>
+      </section>
+
+      <section class="manifesto band" id="manifesto">
+        <div class="wrap">
+          <p class="section-index">08 / 08</p>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="manifestoEyebrow">Manifesto DDLP</p>
+            <h2 data-i18n="manifestoTitle">Investir para curtir.<br>Curtir para continuar investindo.</h2>
+          </div>
+          <div class="manifesto-lines">
+            <p data-i18n="manifesto1">Não queremos chegar ricos à aposentadoria e pobres de experiências.</p>
+            <p data-i18n="manifesto2">O investidor não deve abandonar a vida para construir patrimônio.</p>
+            <p data-i18n="manifesto3">Dividendos são pequenas parcelas de liberdade.</p>
+            <p data-i18n="manifesto4">O prazer planejado fortalece a disciplina.</p>
+            <p data-i18n="manifesto5">Quem quer curtir mais precisa construir mais.</p>
+            <p data-i18n="manifesto6">Invista mais para depender menos.</p>
+            <p data-i18n="manifesto7">Reserve uma parte para aproveitar o caminho.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profiles band">
+        <div class="wrap">
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="profilesEyebrow">Três filosofias</p>
+            <h2 data-i18n="profilesTitle">Nem descontrole. Nem abstinência.</h2>
+          </div>
+          <div class="profile-table">
+            <article>
+              <span>01</span>
+              <h3 data-i18n="consumerProfile">Consumidor impulsivo</h3>
+              <ul>
+                <li data-i18n="consumer1">Gasta sem planejamento</li>
+                <li data-i18n="consumer2">Usa dívidas</li>
+                <li data-i18n="consumer3">Não constrói patrimônio</li>
+                <li data-i18n="consumer4">Busca apenas prazer imediato</li>
+              </ul>
+            </article>
+            <article>
+              <span>02</span>
+              <h3 data-i18n="extremistProfile">Investidor extremista</h3>
+              <ul>
+                <li data-i18n="extreme1">Investe praticamente tudo</li>
+                <li data-i18n="extreme2">Sente culpa ao gastar</li>
+                <li data-i18n="extreme3">Adia todas as experiências</li>
+                <li data-i18n="extreme4">Pode perder motivação</li>
+              </ul>
+            </article>
+            <article class="profile-ddlp">
+              <span>03</span>
+              <h3 data-i18n="ddlpProfile">Investidor DDLP</h3>
+              <ul>
+                <li data-i18n="ddlp1">Investe com agressividade</li>
+                <li data-i18n="ddlp2">Planeja o lazer sem dívida</li>
+                <li data-i18n="ddlp3">Transforma dividendos em liberdade</li>
+                <li data-i18n="ddlp4">Equilibra presente e futuro</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="wrap">
+          <p class="eyebrow" data-i18n="finalEyebrow">Invest to Live</p>
+          <h2 data-i18n="finalTitle">Construa patrimônio sem abandonar a própria vida.</h2>
+          <p data-i18n="finalText">O DDLP não é uma desculpa para gastar mais. É um sistema para investir melhor, viver com consciência e continuar motivado durante toda a jornada.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#budget-calculator" data-i18n="startDDLP">Começar meu DDLP</a>
+            <a class="button button-secondary" href="#manifesto" data-i18n="readFull">Ler o manifesto</a>
+          </div>
+          <strong class="final-tagline" data-i18n="finalTagline">DDLP — Investir para curtir. Curtir para continuar investindo.</strong>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p data-i18n="tagline">DDLP: investir para curtir, curtir para continuar investindo.</p>
-      <p>
-        <a href="https://github.com/SamuelvLopes/ddlp.com.br" data-i18n="sourceFooter">
-          Este site é open source.
-        </a>
-      </p>
-      <p class="note" data-i18n="note">Conteúdo filosófico, não recomendação financeira.</p>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="#top">DDLP<span>.</span></a>
+          <p data-i18n="footerPhilosophy">Dividendos, Diversão, Lazer e Putaria.<br>Irreverência com responsabilidade financeira.</p>
+        </div>
+        <div>
+          <p class="footer-label" data-i18n="project">Projeto</p>
+          <a href="https://github.com/SamuelvLopes/ddlp.com.br" target="_blank" rel="noopener" data-i18n="githubLink">Código aberto no GitHub ↗</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p data-i18n="disclaimer">O Protocolo DDLP é uma filosofia de organização financeira e qualidade de vida. O conteúdo apresentado possui caráter educacional e não constitui recomendação de investimento.</p>
+        <p>© <span id="year"></span> DDLP</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
