@@ -1,0 +1,4 @@
+# Public content may be crawled, indexed, and used by AI systems.
+User-agent: *
+Allow: /
+

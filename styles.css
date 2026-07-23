@@ -170,7 +170,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .youth-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg), transparent 45%); }
 .youth-content { position: relative; z-index: 1; padding-bottom: 100px; }
 .youth blockquote { max-width: 850px; margin: 25px 0; font-size: clamp(2.2rem, 5.5vw, 5rem); font-weight: 700; line-height: 1.04; }
-.youth-content > p:last-child { max-width: 630px; margin: 0; color: #c5cac5; font-size: 1.1rem; }
+.youth-content > [data-i18n="youthBody"] { max-width: 630px; margin: 0; color: #c5cac5; font-size: 1.1rem; }
 .youth-content .youth-provocation { max-width: 760px; margin-top: 42px; padding-top: 22px; border-top: 1px solid rgba(230,188,104,.5); color: var(--gold); font: 500 clamp(1rem, 2.2vw, 1.35rem) "DM Mono", monospace; }
 
 .manifesto { background: var(--ink); color: #101210; }
