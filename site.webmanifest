@@ -1,0 +1,13 @@
+{
+  "name": "DDLP — Design Digital, Leads e Performance",
+  "short_name": "DDLP",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFF4E2",
+  "theme_color": "#FFF4E2",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "assets/logo.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
