@@ -3,408 +3,458 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#080a09">
-    <meta name="description" content="DDLP Protocol — um protocolo comportamental para continuar investindo sem deixar de viver.">
-    <meta property="og:title" content="DDLP Protocol — Invest to Live">
-    <meta property="og:description" content="Investir para curtir. Curtir para continuar investindo.">
+    <meta name="theme-color" content="#cfc4fb">
+    <meta name="description" content="DDLP — Design Digital, Leads e Performance. Sites, funis de captação e campanhas medidos do clique ao cliente.">
+    <meta property="og:title" content="DDLP — Design Digital, Leads e Performance">
+    <meta property="og:description" content="Design que atrai. Leads que convertem.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/ddlp-hero.png">
-    <title>DDLP Protocol — Invest to Live</title>
+    <meta property="og:url" content="https://ddlp.com.br/">
+    <title>DDLP — Design Digital, Leads e Performance</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#content" data-i18n="skip">Pular para o conteúdo</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="DDLP Protocol">DDLP<span>.</span></a>
-      <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria-label="mainNav">
-        <a href="#protocol" data-i18n="navProtocol">Protocolo</a>
-        <a href="#tools" data-i18n="navTools">Ferramentas</a>
-        <a href="#manifesto" data-i18n="navManifesto">Manifesto</a>
-      </nav>
-      <div class="header-actions">
-        <a class="source-link" href="https://github.com/SamuelvLopes/ddlp.com.br" target="_blank" rel="noopener me">
-          <span class="source-mark" aria-hidden="true">⌘</span>
-          <span data-i18n="openSource">Open source</span>
+      <div class="wrap header-inner">
+        <a class="brand" href="#top" aria-label="DDLP — início">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 7h8.5C22.6 7 26 10.6 26 16s-3.4 9-9.5 9H8V7Zm6 13.3h2.2c2.7 0 4-1.5 4-4.3s-1.3-4.3-4-4.3H14v8.6Z" fill="var(--lilac)"/><circle cx="25.5" cy="25.5" r="3" fill="var(--peach)"/></svg>
+          <span>DDLP</span>
         </a>
-        <nav class="language-switcher" aria-label="Selecionar idioma" data-i18n-aria-label="languageNav">
-          <button type="button" data-lang="pt-BR" aria-pressed="true">PT</button>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria-label="mainNav">
+          <a href="#servicos" data-i18n="navServices">Serviços</a>
+          <a href="#processo" data-i18n="navProcess">Como trabalhamos</a>
+          <a href="#planos" data-i18n="navPlans">Planos</a>
+          <a href="#faq" data-i18n="navFaq">Dúvidas</a>
         </nav>
+        <div class="header-actions">
+          <div class="language-switcher" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="languageNav">
+            <button type="button" data-lang="pt-BR" aria-pressed="true">PT</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          </div>
+          <a class="btn btn-peach btn-sm" href="#contato" data-i18n="navCta">Fale com a gente</a>
+        </div>
       </div>
     </header>
 
     <main id="content">
+      <!-- HERO -->
       <section class="hero" id="top">
-        <div class="hero-backdrop" aria-hidden="true"></div>
-        <div class="hero-content wrap">
-          <p class="eyebrow" data-i18n="heroEyebrow">Protocolo financeiro independente · Brasil</p>
-          <h1>DDLP <span>Protocol</span></h1>
-          <p class="hero-subtitle">Invest to Live<span>.</span></p>
-          <p class="hero-copy" data-i18n="heroCopy">
-            Um jeito simples de separar dinheiro para viver agora sem desmontar o plano de longo prazo.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#protocol" data-i18n="meetProtocol">Entender o DDLP</a>
-            <a class="button button-secondary" href="#manifesto" data-i18n="readManifesto">Ver manifesto</a>
+        <svg class="hero-lines" viewBox="0 0 1440 640" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M-40 520C220 420 360 600 640 470S1100 220 1480 330"/>
+          <path d="M-40 140C260 60 420 260 760 170S1180 40 1480 120"/>
+          <path d="M-40 360C300 300 520 420 820 330S1240 420 1480 380"/>
+        </svg>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <h1>
+              <span class="h1-muted" data-i18n="heroLine1">Design que atrai</span>
+              <span class="h1-strong" data-i18n="heroLine2">Leads que</span>
+              <span class="h1-strong"><span class="scribble" data-i18n="heroLine3">convertem</span></span>
+            </h1>
+            <p class="hero-lead" data-i18n="heroLead">DDLP é Design Digital, Leads e Performance.</p>
+            <p class="hero-text" data-i18n="heroText">Criamos sites e landing pages, montamos o funil de captação e otimizamos suas campanhas. Tudo medido, do primeiro clique ao cliente fechado.</p>
+            <div class="hero-actions">
+              <a class="btn btn-peach" href="#contato">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="ctaPrimary">Quero mais leads</span>
+              </a>
+              <a class="btn btn-white" href="#servicos">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l3 3-3 3m5 0h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="ctaSecondary">Ver o que fazemos</span>
+              </a>
+            </div>
           </div>
-          <blockquote data-i18n="heroQuote">“O plano só presta se você conseguir viver com ele.”</blockquote>
-        </div>
-        <a class="scroll-cue" href="#problem" aria-label="Rolar para o conteúdo" data-i18n-aria-label="scrollLabel">↓</a>
-      </section>
 
-      <section class="problem band" id="problem">
-        <div class="wrap">
-          <p class="section-index">01 / 08</p>
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="problemEyebrow">Altos e baixos</p>
-            <h2 data-i18n="problemTitle">A vida não sobe em linha reta. Seu orçamento também não deveria fingir que sim.</h2>
-          </div>
-          <div class="extremes">
-            <article>
-              <span class="extreme-number">01</span>
-              <h3 data-i18n="impulsiveTitle">Aproveitar sem freio</h3>
-              <p data-i18n="impulsiveText">Na fase boa, gastar como se ela fosse durar para sempre tira a proteção dos períodos ruins.</p>
-            </article>
-            <div class="or" data-i18n="or">ou</div>
-            <article>
-              <span class="extreme-number">02</span>
-              <h3 data-i18n="extremistTitle">Guardar como se hoje não existisse</h3>
-              <p data-i18n="extremistText">Mandar tudo para um futuro distante pode fazer o patrimônio crescer enquanto a vida fica parada.</p>
-            </article>
-          </div>
-          <div class="third-way">
-            <p data-i18n="thirdWayLabel">O ponto do DDLP</p>
-            <strong data-i18n="thirdWay">Nos bons momentos, construir patrimônio e construir memórias.</strong>
-          </div>
-          <div class="investor-pressure">
-            <p class="pressure-rate">↑ · ↓</p>
-            <div>
-              <h3 data-i18n="pressureTitle">O desgaste escondido</h3>
-              <p data-i18n="pressureText">Quem nunca se permite aproveitar começa a perguntar para que serve tanto esforço. Um limite de prazer reduz essa fricção sem abrir mão dos aportes.</p>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="window window-dark hero-brief">
+              <div class="window-bar"><i></i><i></i><i></i><span data-i18n="mockBriefTitle">Briefing</span></div>
+              <ul class="terminal">
+                <li><b>→</b><span data-i18n="mockBrief1">Landing para clínica de estética, foco em agendamento</span></li>
+                <li class="ok"><b>✓</b><span data-i18n="mockBrief2">Layout aprovado e publicado</span></li>
+                <li><b>→</b><span data-i18n="mockBrief3">Ligar campanhas Meta + Google ao formulário</span></li>
+                <li class="ok"><b>✓</b><span data-i18n="mockBrief4">Pixel, GA4 e conversões rastreando</span></li>
+              </ul>
+            </div>
+
+            <div class="window window-light hero-panel">
+              <div class="window-bar"><i></i><i></i><i></i><span data-i18n="mockPanelTitle">Painel de leads</span></div>
+              <div class="panel-head">
+                <strong data-i18n="mockPanelHead">Leads da semana</strong>
+                <span class="tag" data-i18n="mockSample">dados de exemplo</span>
+              </div>
+              <div class="panel-kpis">
+                <div><small data-i18n="mockLeads">Leads</small><strong>128</strong></div>
+                <div><small data-i18n="mockCpl">Custo/lead</small><strong>R$ 14</strong></div>
+                <div><small data-i18n="mockConv">Conversão</small><strong>6,2%</strong></div>
+              </div>
+              <div class="bars">
+                <span style="--h:38%"></span><span style="--h:52%"></span><span style="--h:44%"></span><span style="--h:66%"></span><span style="--h:58%"></span><span style="--h:80%"></span><span style="--h:92%"></span>
+              </div>
+              <div class="panel-row"><span data-i18n="mockSource">Origem principal</span><strong>Instagram Ads</strong></div>
+              <div class="btn btn-peach btn-block" data-i18n="mockExport">Enviar para o CRM</div>
+            </div>
+
+            <div class="toast hero-toast">
+              <span class="toast-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="#25d366"/><path d="M9 8.3c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.1.1-.1.3 0 .4.6 1 1.4 1.8 2.4 2.3.2.1.3.1.4 0l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4 0 .6-.3 1.3-1 1.6-.7.3-1.6.4-3.3-.4-2-1-3.3-3-3.5-3.3-.3-.4-.8-1.4-.8-2.3 0-.9.4-1.4.6-1.6Z" fill="#fff"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="mockToastTitle">Novo lead no WhatsApp</strong>
+                <p data-i18n="mockToastText">Ana quer agendar uma avaliação para sexta.</p>
+                <div class="toast-actions"><span data-i18n="mockToastA">Responder agora</span><span data-i18n="mockToastB">Ver no CRM</span></div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="wrap pillars">
+          <article>
+            <span class="icon-tile"><svg viewBox="0 0 24 24"><path d="M4 18 16.5 5.5a2.1 2.1 0 0 1 3 3L7 21H4v-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            <div><h3 data-i18n="pillarDTitle">Design digital</h3><p data-i18n="pillarDText">Sites, landing pages e identidade visual que passam confiança no primeiro segundo.</p></div>
+          </article>
+          <article>
+            <span class="icon-tile"><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4L3 5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            <div><h3 data-i18n="pillarLTitle">Leads</h3><p data-i18n="pillarLText">Formulários, WhatsApp e CRM conectados para nenhum contato se perder no caminho.</p></div>
+          </article>
+          <article>
+            <span class="icon-tile"><svg viewBox="0 0 24 24"><path d="M4 19h16M6 15l4-4 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h3 data-i18n="pillarPTitle">Performance</h3><p data-i18n="pillarPText">Campanhas, testes e relatórios para investir onde o retorno aparece.</p></div>
+          </article>
+        </div>
       </section>
 
-      <section class="ratio band" id="protocol">
+      <!-- DARK THESIS -->
+      <section class="thesis">
+        <svg class="wave wave-top" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40V20c60 0 60-20 120-20s60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20v20Z"/></svg>
+        <div class="thesis-pattern" aria-hidden="true"></div>
+        <div class="wrap thesis-grid">
+          <div class="thesis-copy">
+            <h2><span data-i18n="thesisTitle1">Do briefing ao lead</span><br><span data-i18n="thesisTitle2">em semanas, não meses</span></h2>
+            <p data-i18n="thesisText1">Muita empresa contrata um designer, um gestor de tráfego e alguém para cuidar do CRM. Cada um olha só para a sua parte, e ninguém responde pelo resultado.</p>
+            <p data-i18n="thesisText2">A DDLP junta as três frentes em um só time: a página é desenhada para converter, a campanha é feita para aquela página e cada lead é rastreado até virar venda.</p>
+            <a class="btn btn-peach" href="#contato" data-i18n="ctaDiagnosis">Pedir diagnóstico gratuito</a>
+          </div>
+          <div class="dash" aria-hidden="true">
+            <aside class="dash-side">
+              <div class="dash-logo">DDLP</div>
+              <p class="dash-group" data-i18n="dashGroup1">Captação</p>
+              <span class="active" data-i18n="dashNav1">Visão geral</span>
+              <span data-i18n="dashNav2">Campanhas</span>
+              <span data-i18n="dashNav3">Formulários</span>
+              <p class="dash-group" data-i18n="dashGroup2">Vendas</p>
+              <span data-i18n="dashNav4">Pipeline</span>
+              <span data-i18n="dashNav5">Relatórios</span>
+            </aside>
+            <div class="dash-main">
+              <div class="dash-title"><strong data-i18n="dashTitle">Visão geral</strong><small data-i18n="dashSub">Últimos 30 dias · dados de exemplo</small></div>
+              <div class="dash-kpis">
+                <div><small data-i18n="dashK1">Visitas</small><strong>18.240</strong><em class="up">↗ 32%</em></div>
+                <div><small data-i18n="dashK2">Leads</small><strong>512</strong><em class="up">↗ 47%</em></div>
+                <div><small data-i18n="dashK3">Custo/lead</small><strong>R$ 13,80</strong><em class="up">↘ 21%</em></div>
+                <div><small data-i18n="dashK4">Vendas</small><strong>64</strong><em class="up">↗ 18%</em></div>
+              </div>
+              <div class="dash-chart">
+                <small data-i18n="dashChart">Leads por dia</small>
+                <svg viewBox="0 0 400 110" preserveAspectRatio="none"><path class="area" d="M0 96 L30 88 60 92 90 74 120 80 150 62 180 70 210 50 240 56 270 40 300 46 330 28 360 34 400 14 L400 110 0 110Z"/><path class="line" d="M0 96 L30 88 60 92 90 74 120 80 150 62 180 70 210 50 240 56 270 40 300 46 330 28 360 34 400 14"/><path class="ghost" d="M0 100 L40 98 80 92 120 94 160 86 200 88 240 80 280 82 320 74 360 76 400 68"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="wave wave-bottom" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v20c60 0 60 20 120 20s60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20V0Z"/></svg>
+      </section>
+
+      <!-- BENTO -->
+      <section class="section" id="servicos">
         <div class="wrap">
-          <p class="section-index">02 / 08</p>
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="ratioEyebrow">O princípio</p>
-            <h2 data-i18n="ratioTitle">Uma parte para viver.<br>O plano continua.</h2>
-            <p data-i18n="ratioIntro">O DDLP não escolhe ativos. Ele só define quanto pode virar prazer sem culpa.</p>
+          <div class="section-head">
+            <h2 data-i18n="servicesTitle">Tudo que sua marca precisa</h2>
+            <p data-i18n="servicesText">Uma página bonita é só o começo. Cuidamos da presença, da captação e da otimização, com um plano que cresce junto com o seu negócio.</p>
           </div>
 
-          <div class="ratio-visual" role="img" aria-label="Uma parcela da renda mais rendimentos opcionais formam o orçamento DDLP" data-i18n-aria-label="ratioAria">
-            <div class="ratio-ddlp">
-              <strong data-count="10">10%</strong>
-              <span data-i18n="ratioSalary">Salário + renda extra</span>
-            </div>
-            <div class="ratio-structure">
-              <strong data-count="100">100%</strong>
-              <span data-i18n="ratioDividends">Dividendos, rendimentos ou ganhos opcionais</span>
-            </div>
+          <div class="bento">
+            <article class="card card-green span-6">
+              <div class="card-art" aria-hidden="true">
+                <div class="mini mini-browser">
+                  <div class="mini-bar"><i></i><i></i><i></i></div>
+                  <div class="mini-hero"></div>
+                  <div class="mini-lines"><span></span><span></span><span class="short"></span></div>
+                  <div class="mini-btn"></div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="b1Title">Sites e landing pages</h3>
+                <p data-i18n="b1Text">Páginas rápidas, responsivas e pensadas para uma ação só: fazer o visitante entrar em contato.</p>
+              </div>
+            </article>
+
+            <article class="card card-lilac span-6">
+              <div class="card-art" aria-hidden="true">
+                <div class="mini mini-palette">
+                  <span style="--c:#1e1b18"></span><span style="--c:#9b80e3"></span><span style="--c:#f6b98f"></span><span style="--c:#f6f3ee"></span>
+                </div>
+                <div class="mini mini-type"><b>Aa</b><small>Display · Texto</small></div>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="b2Title">Identidade visual</h3>
+                <p data-i18n="b2Text">Logo, cores, tipografia e peças para redes sociais. Uma marca que parece grande desde o primeiro post.</p>
+              </div>
+            </article>
+
+            <article class="card card-yellow span-4">
+              <div class="card-art" aria-hidden="true">
+                <div class="mini mini-form">
+                  <span class="field"></span><span class="field"></span><span class="mini-btn small"></span>
+                </div>
+                <div class="chip">+1 lead</div>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="b3Title">Funis de captação</h3>
+                <p data-i18n="b3Text">Formulários, iscas digitais e WhatsApp integrados ao seu CRM, com resposta automática.</p>
+              </div>
+            </article>
+
+            <article class="card card-peach span-4">
+              <div class="card-art" aria-hidden="true">
+                <div class="mini mini-ads">
+                  <div><small>Meta</small><b>62%</b></div>
+                  <div><small>Google</small><b>38%</b></div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="b4Title">Tráfego pago</h3>
+                <p data-i18n="b4Text">Campanhas no Meta, Google e TikTok com verba distribuída para onde o lead sai mais barato.</p>
+              </div>
+            </article>
+
+            <article class="card card-blue span-4">
+              <div class="card-art" aria-hidden="true">
+                <div class="mini mini-receipt">
+                  <strong data-i18n="b5Receipt">Relatório</strong>
+                  <span><i data-i18n="b5r1">Cliques</i><b>✓</b></span>
+                  <span><i data-i18n="b5r2">Leads</i><b>✓</b></span>
+                  <span><i data-i18n="b5r3">Vendas</i><b>✓</b></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="b5Title">Analytics e CRO</h3>
+                <p data-i18n="b5Text">Rastreamento ponta a ponta e testes A/B para a mesma verba gerar mais resultado todo mês.</p>
+              </div>
+            </article>
           </div>
 
-          <div class="ratio-copy">
-            <p data-i18n="ratioBody">O orçamento DDLP pode receber uma parcela previamente definida da renda, como 10% do salário. Dividendos, rendimentos ou outros ganhos podem complementar esse valor quando existirem, mas não são obrigatórios. Fora desse orçamento, o plano continua intacto:</p>
-            <ul class="responsibility-list">
-              <li data-i18n="essential">Despesas essenciais</li>
-              <li data-i18n="family">Responsabilidades familiares</li>
-              <li data-i18n="debts">Pagamento de dívidas</li>
-              <li data-i18n="reserve">Reserva de emergência</li>
-              <li data-i18n="investments">Investimentos e patrimônio</li>
+          <div class="channels">
+            <p data-i18n="channelsLabel">Ferramentas e canais com que trabalhamos</p>
+            <ul>
+              <li>Meta Ads</li><li>Google Ads</li><li>TikTok Ads</li><li>GA4</li><li>Google Tag Manager</li><li>WhatsApp Business</li><li>RD Station</li><li>HubSpot</li>
             </ul>
           </div>
-          <p class="note-callout" data-i18n="ratioNote">Acabou o saldo, acabou a diversão financeira daquele período. Aporte, reserva, patrimônio e cartão ficam fora da brincadeira.</p>
         </div>
       </section>
 
-      <section class="cycle band">
+      <!-- LEADS DEEP DIVE -->
+      <section class="section section-ruled">
         <div class="wrap">
-          <p class="section-index">03 / 08</p>
-          <div class="section-heading compact">
-            <p class="eyebrow" data-i18n="cycleEyebrow">O ciclo DDLP</p>
-            <h2 data-i18n="cycleTitle">Ganhar, organizar, investir, aproveitar e continuar.</h2>
+          <div class="section-head">
+            <h2 data-i18n="leadsTitle">Leads que não se perdem</h2>
+            <p data-i18n="leadsText">O lead chega, é qualificado e vai direto para quem vende. Sem planilha esquecida e sem mensagem respondida dois dias depois.</p>
           </div>
-          <ol class="cycle-flow">
-            <li><span>01</span><strong data-i18n="cycleWork">Ganhar</strong></li>
-            <li><span>02</span><strong data-i18n="cycleEarn">Organizar</strong></li>
-            <li><span>03</span><strong data-i18n="cycleInvest">Investir</strong></li>
-            <li><span>04</span><strong data-i18n="cycleReceive">Aproveitar no limite</strong></li>
-            <li><span>05</span><strong data-i18n="cycleEnjoy">Voltar melhor</strong></li>
-            <li><span>06</span><strong data-i18n="cycleMotivate">Manter aportes</strong></li>
-          </ol>
-          <p class="cycle-return" data-i18n="cycleReturn">e continuar investindo ↗</p>
-        </div>
-      </section>
-
-      <section class="experiences band">
-        <div class="wrap">
-          <p class="section-index">04 / 08</p>
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="experiencesEyebrow">A conta é ingrata</p>
-            <h2 data-i18n="experiencesTitle">No começo, entra muito dinheiro na carteira e volta pouco para a vida.</h2>
-          </div>
-          <div class="schedule">
+          <div class="trio">
             <article>
-              <p class="schedule-frequency" data-i18n="simpleFrequency">Exemplo inicial</p>
-              <h3 data-i18n="simpleTitle">R$ 5.000 aportados</h3>
-              <p data-i18n="simpleText">A construção patrimonial exige esforço antes de produzir resultados relevantes.</p>
-            </article>
-            <article>
-              <p class="schedule-frequency" data-i18n="complexFrequency">Primeiros frutos</p>
-              <h3 data-i18n="complexTitle">R$ 100 em dividendos</h3>
-              <p data-i18n="complexText">O valor pode parecer pequeno, mas mostra que a máquina ainda em construção já começou a funcionar.</p>
-            </article>
-            <p class="schedule-rule" data-i18n="scheduleRule">O erro é desprezar a recompensa por ser pequena. O outro erro é usar a recompensa como licença para perder o controle.</p>
-          </div>
-          <div class="experience-grid">
-            <article>
-              <span class="experience-icon">01</span>
-              <h3 data-i18n="dinner">Um jantar</h3>
-              <p data-i18n="dinnerText">Quando existem, dividendos podem virar recompensa concreta sem vender patrimônio.</p>
-            </article>
-            <article>
-              <span class="experience-icon">02</span>
-              <h3 data-i18n="trip">Uma viagem</h3>
-              <p data-i18n="tripText">Saldo acumulado transformado em uma memória real.</p>
-            </article>
-            <article>
-              <span class="experience-icon">03</span>
-              <h3 data-i18n="hobby">Um hobby</h3>
-              <p data-i18n="hobbyText">Uma parcela planejada da renda ampliando possibilidades.</p>
-            </article>
-            <article>
-              <span class="experience-icon">04</span>
-              <h3 data-i18n="freedom">Mais liberdade</h3>
-              <p data-i18n="freedomText">Mais renda e patrimônio, mais espaço para viver sem dívida.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="rules band">
-        <div class="wrap">
-          <p class="section-index">05 / 08</p>
-          <div class="section-heading compact">
-            <p class="eyebrow" data-i18n="rulesEyebrow">As regras</p>
-            <h2 data-i18n="rulesTitle">Prazer planejado.<br>Disciplina preservada.</h2>
-          </div>
-          <ol class="rule-list">
-            <li><span>01</span><p data-i18n="rule1">O lazer deve estar previsto no orçamento.</p></li>
-            <li><span>02</span><p data-i18n="rule2">Nunca use empréstimos para financiar diversão.</p></li>
-            <li><span>03</span><p data-i18n="rule3">Não invada o aporte para continuar gastando.</p></li>
-            <li><span>04</span><p data-i18n="rule4">Não sacrifique a reserva ou necessidades essenciais.</p></li>
-            <li><span>05</span><p data-i18n="rule5">Não venda patrimônio produtivo por impulso.</p></li>
-            <li><span>06</span><p data-i18n="rule6">Gastar é opcional; acumular o saldo também faz parte.</p></li>
-            <li><span>07</span><p data-i18n="rule7">Eleve o lazer quando renda, patrimônio ou resultados crescerem.</p></li>
-            <li><span>08</span><p data-i18n="rule8">Não sinta culpa ao gastar o valor planejado.</p></li>
-            <li><span>09</span><p data-i18n="rule9">Priorize experiências reais, não ostentação.</p></li>
-            <li><span>10</span><p data-i18n="rule10">Gaste dentro do limite. Invista além da vontade.</p></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="tools band" id="tools">
-        <div class="wrap">
-          <p class="section-index">06 / 08</p>
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="toolsEyebrow">Do conceito ao orçamento</p>
-            <h2 data-i18n="toolsTitle">Calcule sua liberdade.</h2>
-            <p data-i18n="toolsIntro">Use valores mensais. As estimativas são educativas e não garantem rentabilidade.</p>
-          </div>
-
-          <div class="calculator" id="budget-calculator">
-            <div class="calculator-head">
-              <p class="tool-number">01</p>
-              <div>
-                <h3 data-i18n="budgetTitle">Calculadora DDLP</h3>
-                <p data-i18n="budgetSubtitle">Veja quanto você pode gastar sem culpa.</p>
+              <div class="panel" aria-hidden="true">
+                <div class="panel-title"><span class="dot"></span><span data-i18n="trio1Panel">Formulário de avaliação</span></div>
+                <label class="fake-input"><small data-i18n="trio1Field1">Nome</small><span>Ana Souza</span></label>
+                <label class="fake-input"><small data-i18n="trio1Field2">Interesse</small><span data-i18n="trio1Value">Harmonização facial</span></label>
+                <span class="btn btn-lilac btn-block" data-i18n="trio1Btn">Quero agendar</span>
               </div>
-            </div>
-            <form class="calculator-grid" data-calculator="budget">
-              <div class="fields">
-                <label>
-                  <span data-i18n="netSalary">Salário líquido</span>
-                  <span class="input-wrap"><span>R$</span><input id="salary" type="number" min="0" step="100" value="10000" inputmode="decimal"></span>
-                </label>
-                <label>
-                  <span data-i18n="extraIncome">Renda extra</span>
-                  <span class="input-wrap"><span>R$</span><input id="extra" type="number" min="0" step="100" value="0" inputmode="decimal"></span>
-                </label>
-                <label>
-                  <span data-i18n="monthlyDividends">Rendimentos opcionais</span>
-                  <span class="input-wrap"><span>R$</span><input id="dividends" type="number" min="0" step="50" value="500" inputmode="decimal"></span>
-                </label>
-                <label>
-                  <span><span data-i18n="desiredPercent">Percentual da renda ativa</span> <output id="percent-output">10%</output></span>
-                  <input id="percentage" class="range" type="range" min="1" max="30" value="10">
-                </label>
+              <h3 data-i18n="trio1Title">Captação qualificada</h3>
+              <p data-i18n="trio1Text">Perguntas certas no formulário filtram curiosos e entregam ao comercial o contexto de cada pessoa.</p>
+            </article>
+            <article>
+              <div class="panel" aria-hidden="true">
+                <div class="panel-title"><span class="dot"></span><span data-i18n="trio2Panel">Roteamento</span></div>
+                <div class="route"><span>Instagram</span><b>→</b><span>WhatsApp</span></div>
+                <div class="route"><span>Google</span><b>→</b><span data-i18n="trio2Sales">Comercial</span></div>
+                <div class="route"><span data-i18n="trio2Site">Site</span><b>→</b><span>E-mail</span></div>
               </div>
-              <div class="results" aria-live="polite">
-                <p class="result-label" data-i18n="monthlyBudget">Saldo DDLP disponível no mês</p>
-                <strong class="result-main" id="budget-result">R$ 1.500</strong>
-                <div class="result-grid">
-                  <div><span data-i18n="remaining">Renda ativa para demais compromissos</span><strong id="remaining-result">R$ 9.000</strong></div>
-                  <div><span data-i18n="dividendCoverage">Parcela complementar</span><strong id="coverage-result">33%</strong></div>
-                  <div><span data-i18n="threeMonths">Saldo em 3 meses</span><strong id="three-result">R$ 4.500</strong></div>
-                  <div><span data-i18n="sixMonths">Saldo em 6 meses</span><strong id="six-result">R$ 9.000</strong></div>
-                  <div><span data-i18n="twelveMonths">Saldo em 12 meses</span><strong id="twelve-result">R$ 18.000</strong></div>
+              <h3 data-i18n="trio2Title">Resposta em minutos</h3>
+              <p data-i18n="trio2Text">Cada origem cai no canal certo, com mensagem automática de boas-vindas enquanto o time assume.</p>
+            </article>
+            <article>
+              <div class="panel" aria-hidden="true">
+                <div class="panel-title"><span class="dot"></span><span>Pipeline</span></div>
+                <div class="pipe">
+                  <div><small data-i18n="trio3Col1">Novo</small><i></i><i></i><i></i></div>
+                  <div><small data-i18n="trio3Col2">Conversa</small><i></i><i></i></div>
+                  <div><small data-i18n="trio3Col3">Fechado</small><i class="won"></i></div>
                 </div>
               </div>
-            </form>
-          </div>
-
-          <div class="calculator" id="freedom-calculator">
-            <div class="calculator-head">
-              <p class="tool-number">02</p>
-              <div>
-                <h3 data-i18n="freedomCalcTitle">Simulador de patrimônio e liberdade</h3>
-                <p data-i18n="freedomCalcSubtitle">Estime o patrimônio que poderia complementar seu DDLP.</p>
-              </div>
-            </div>
-            <form class="calculator-grid" data-calculator="freedom">
-              <div class="fields">
-                <label>
-                  <span data-i18n="investedAssets">Patrimônio investido</span>
-                  <span class="input-wrap"><span>R$</span><input id="assets" type="number" min="0" step="1000" value="100000" inputmode="decimal"></span>
-                </label>
-                <label>
-                  <span data-i18n="monthlyContribution">Aporte mensal</span>
-                  <span class="input-wrap"><span>R$</span><input id="contribution" type="number" min="0" step="100" value="2000" inputmode="decimal"></span>
-                </label>
-                <label>
-                  <span data-i18n="averageYield">Rendimento médio anual</span>
-                  <span class="input-wrap suffix"><input id="yield-rate" type="number" min="0.1" max="100" step="0.1" value="8" inputmode="decimal"><span>%</span></span>
-                </label>
-                <label>
-                  <span data-i18n="monthlyGoal">Objetivo DDLP mensal</span>
-                  <span class="input-wrap"><span>R$</span><input id="goal" type="number" min="0" step="100" value="1000" inputmode="decimal"></span>
-                </label>
-              </div>
-              <div class="results freedom-results" aria-live="polite">
-                <p class="result-label" data-i18n="neededAssets">Patrimônio estimado necessário</p>
-                <strong class="result-main" id="needed-result">R$ 150.000</strong>
-                <p class="result-sentence" id="freedom-message"></p>
-                <div class="progress-track" aria-hidden="true"><span id="freedom-progress"></span></div>
-                <div class="result-grid">
-                  <div><span data-i18n="currentMonthlyIncome">Renda mensal estimada hoje</span><strong id="income-now-result">R$ 667</strong></div>
-                  <div><span data-i18n="goalProgress">Progresso do objetivo</span><strong id="goal-progress-result">67%</strong></div>
-                  <div><span data-i18n="estimatedTime">Tempo estimado com aportes</span><strong id="time-result">1 ano e 8 meses</strong></div>
-                </div>
-              </div>
-            </form>
-            <p class="calculator-disclaimer" data-i18n="calcDisclaimer">Estimativa simplificada, antes de impostos e inflação. Rentabilidade passada ou projetada não é garantia de resultado.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="youth band">
-        <div class="youth-image" aria-hidden="true"></div>
-        <div class="wrap youth-content">
-          <p class="section-index">07 / 08</p>
-          <p class="eyebrow" data-i18n="youthEyebrow">A juventude também é um ativo</p>
-          <blockquote data-i18n="youthQuote">“Nos momentos de alta, construa patrimônio e construa memórias.”</blockquote>
-          <p data-i18n="youthBody">Dinheiro, saúde, tempo e disposição não estarão sempre disponíveis na mesma proporção. Algumas experiências podem esperar; outras perdem valor quando adiadas por tempo demais.</p>
-          <p class="youth-provocation" data-i18n="youthProvocation">“A preocupação dele era com o amanhã. Ele morreu esta noite.”</p>
-        </div>
-      </section>
-
-      <section class="manifesto band" id="manifesto">
-        <div class="wrap">
-          <p class="section-index">08 / 08</p>
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="manifestoEyebrow">Manifesto DDLP</p>
-            <h2 data-i18n="manifestoTitle">Investir para curtir.<br>Curtir para continuar investindo.</h2>
-          </div>
-          <div class="manifesto-lines">
-            <p data-i18n="manifesto1">Não queremos chegar ricos à aposentadoria e pobres de experiências.</p>
-            <p data-i18n="manifesto2">O investidor não deve abandonar a vida para construir patrimônio.</p>
-            <p data-i18n="manifesto3">Aproveitar os altos com consciência ajuda a atravessar os baixos com sentido.</p>
-            <p data-i18n="manifesto4">O DDLP não ensina onde investir; ensina como continuar investindo.</p>
-            <p data-i18n="manifesto5">O prazer planejado fortalece a disciplina.</p>
-            <p data-i18n="manifesto6">Quem quer curtir mais precisa construir mais.</p>
-            <p data-i18n="manifesto7">Reserve uma parte para aproveitar o caminho.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="profiles band">
-        <div class="wrap">
-          <div class="section-heading compact">
-            <p class="eyebrow" data-i18n="profilesEyebrow">Três filosofias</p>
-            <h2 data-i18n="profilesTitle">Nem descontrole. Nem abstinência.</h2>
-          </div>
-          <div class="profile-table">
-            <article>
-              <span>01</span>
-              <h3 data-i18n="consumerProfile">Consumidor impulsivo</h3>
-              <ul>
-                <li data-i18n="consumer1">Gasta sem planejamento</li>
-                <li data-i18n="consumer2">Usa dívidas</li>
-                <li data-i18n="consumer3">Não constrói patrimônio</li>
-                <li data-i18n="consumer4">Busca apenas prazer imediato</li>
-              </ul>
-            </article>
-            <article>
-              <span>02</span>
-              <h3 data-i18n="extremistProfile">Investidor extremista</h3>
-              <ul>
-                <li data-i18n="extreme1">Investe praticamente tudo</li>
-                <li data-i18n="extreme2">Sente culpa ao gastar</li>
-                <li data-i18n="extreme3">Adia todas as experiências</li>
-                <li data-i18n="extreme4">Pode compensar com uma grande compra impulsiva</li>
-              </ul>
-            </article>
-            <article class="profile-ddlp">
-              <span>03</span>
-              <h3 data-i18n="ddlpProfile">Investidor DDLP</h3>
-              <ul>
-                <li data-i18n="ddlp1">Investe mais de 40% ou 50% com consistência</li>
-                <li data-i18n="ddlp2">Planeja o lazer sem dívida</li>
-                <li data-i18n="ddlp3">Usa prazer planejado para sustentar disciplina</li>
-                <li data-i18n="ddlp4">Equilibra presente e futuro</li>
-              </ul>
+              <h3 data-i18n="trio3Title">CRM organizado</h3>
+              <p data-i18n="trio3Text">Funil visual com etapas claras, para você saber quanto entrou, quanto avançou e quanto fechou.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="final-cta">
+      <!-- PERFORMANCE SPLIT -->
+      <section class="split">
+        <div class="wrap split-grid">
+          <div class="split-copy">
+            <h2><span data-i18n="perfTitle1">Você investe</span><br><span data-i18n="perfTitle2">a gente mede o resto</span></h2>
+            <p data-i18n="perfText1">Performance não é postar mais. É saber de onde vem cada venda.</p>
+            <p data-i18n="perfText2">Configuramos o rastreamento, acompanhamos as campanhas toda semana e mostramos em um relatório simples o que está funcionando e o que vamos mudar.</p>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="icon-tile lilac"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <div><h3 data-i18n="f1Title">Gestão de tráfego</h3><p data-i18n="f1Text">Públicos, criativos e lances ajustados com base em lead e venda, não em curtida.</p></div>
+            </li>
+            <li>
+              <span class="icon-tile lilac"><svg viewBox="0 0 24 24"><path d="M5 5h6v14H5zM13 9h6v10h-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <div><h3 data-i18n="f2Title">Testes A/B</h3><p data-i18n="f2Text">Títulos, ofertas e layouts testados lado a lado. Fica a versão que converte mais.</p></div>
+            </li>
+            <li>
+              <span class="icon-tile lilac"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <div><h3 data-i18n="f3Title">Rastreamento completo</h3><p data-i18n="f3Text">Pixel, GA4, UTMs e conversões configurados para enxergar o caminho inteiro do cliente.</p></div>
+            </li>
+            <li>
+              <span class="icon-tile lilac"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z M14 3v5h5M9 13h7M9 17h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <div><h3 data-i18n="f4Title">Relatórios sem enrolação</h3><p data-i18n="f4Text">Um resumo mensal em linguagem clara: quanto entrou, quanto custou e o próximo passo.</p></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section" id="processo">
         <div class="wrap">
-          <p class="eyebrow" data-i18n="finalEyebrow">Invest to Live</p>
-          <h2 data-i18n="finalTitle">Construa patrimônio sem abandonar a própria vida.</h2>
-          <p data-i18n="finalText">Aproveitar os altos com consciência não é irresponsabilidade. É impedir que uma vida organizada no extrato vire uma vida frustrada por dentro.</p>
+          <div class="section-head">
+            <h2 data-i18n="processTitle">Como trabalhamos</h2>
+            <p data-i18n="processText">Quatro etapas, prazos claros e você acompanhando tudo.</p>
+          </div>
+          <ol class="steps">
+            <li><span class="step-n">01</span><h3 data-i18n="s1Title">Diagnóstico</h3><p data-i18n="s1Text">Entendemos seu negócio, seu público e onde o funil está vazando hoje.</p></li>
+            <li><span class="step-n">02</span><h3 data-i18n="s2Title">Design</h3><p data-i18n="s2Text">Criamos a página e as peças com a oferta e a identidade da sua marca.</p></li>
+            <li><span class="step-n">03</span><h3 data-i18n="s3Title">Lançamento</h3><p data-i18n="s3Text">Publicamos, ligamos as campanhas e conferimos cada evento de conversão.</p></li>
+            <li><span class="step-n">04</span><h3 data-i18n="s4Title">Otimização</h3><p data-i18n="s4Text">Acompanhamos os números, testamos melhorias e reportamos todo mês.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PLANS -->
+      <section class="section section-ruled" id="planos">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 data-i18n="plansTitle">Planos sob medida</h2>
+            <p data-i18n="plansText">Cada negócio está em um momento diferente. Escolha por onde começar; o valor sai depois do diagnóstico, sem surpresa.</p>
+          </div>
+          <div class="plans">
+            <article class="plan">
+              <p class="plan-tag" data-i18n="p1Tag">Presença</p>
+              <h3 data-i18n="p1Title">Para começar do jeito certo</h3>
+              <ul>
+                <li data-i18n="p1i1">Landing page ou site institucional</li>
+                <li data-i18n="p1i2">Identidade visual essencial</li>
+                <li data-i18n="p1i3">Formulário e botão de WhatsApp</li>
+                <li data-i18n="p1i4">GA4 e Pixel configurados</li>
+              </ul>
+              <a class="btn btn-white btn-block" href="#contato" data-i18n="planCta">Quero um orçamento</a>
+            </article>
+            <article class="plan plan-featured">
+              <p class="plan-tag" data-i18n="p2Tag">Captação</p>
+              <h3 data-i18n="p2Title">Para gerar leads todo mês</h3>
+              <ul>
+                <li data-i18n="p2i1">Tudo do Presença</li>
+                <li data-i18n="p2i2">Gestão de tráfego pago</li>
+                <li data-i18n="p2i3">Funil integrado ao CRM</li>
+                <li data-i18n="p2i4">Relatório mensal de resultados</li>
+              </ul>
+              <a class="btn btn-peach btn-block" href="#contato" data-i18n="planCta">Quero um orçamento</a>
+            </article>
+            <article class="plan">
+              <p class="plan-tag" data-i18n="p3Tag">Escala</p>
+              <h3 data-i18n="p3Title">Para crescer com dados</h3>
+              <ul>
+                <li data-i18n="p3i1">Tudo do Captação</li>
+                <li data-i18n="p3i2">Testes A/B contínuos</li>
+                <li data-i18n="p3i3">Múltiplos canais e páginas</li>
+                <li data-i18n="p3i4">Reunião quinzenal de performance</li>
+              </ul>
+              <a class="btn btn-white btn-block" href="#contato" data-i18n="planCta">Quero um orçamento</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 data-i18n="faqTitle">Dúvidas comuns</h2>
+          </div>
+          <div class="faq">
+            <details><summary data-i18n="q1">O que significa DDLP?</summary><p data-i18n="a1">Design Digital, Leads e Performance. São as três frentes que tocamos juntas para o seu marketing dar resultado.</p></details>
+            <details><summary data-i18n="q2">Para que tipo de negócio vocês trabalham?</summary><p data-i18n="a2">Negócios que vendem por contato: clínicas, prestadores de serviço, escritórios, escolas e empresas B2B que dependem de leads.</p></details>
+            <details><summary data-i18n="q3">Em quanto tempo a página fica pronta?</summary><p data-i18n="a3">Uma landing page costuma ficar pronta em duas a três semanas após o diagnóstico, incluindo revisões.</p></details>
+            <details><summary data-i18n="q4">A verba de anúncios está inclusa?</summary><p data-i18n="a4">Não. A verba é paga direto às plataformas, na sua conta. Nós cuidamos da estratégia, da gestão e dos relatórios.</p></details>
+            <details><summary data-i18n="q5">Preciso já ter site ou CRM?</summary><p data-i18n="a5">Não. Se você já tem, aproveitamos o que funciona. Se não tem, montamos do zero com ferramentas simples de usar.</p></details>
+            <details><summary data-i18n="q6">Existe fidelidade?</summary><p data-i18n="a6">Os projetos de design têm escopo fechado. A gestão de performance é mensal, e combinamos as condições na proposta.</p></details>
+            <details><summary data-i18n="q7">Vocês garantem um número de leads?</summary><p data-i18n="a7">Ninguém sério garante número antes de testar. Garantimos método, transparência e relatório claro do que foi feito.</p></details>
+            <details><summary data-i18n="q8">Como começo?</summary><p data-i18n="a8">Mande uma mensagem pelo e-mail abaixo. Marcamos uma conversa rápida e enviamos o diagnóstico gratuito.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final" id="contato">
+        <svg class="wave wave-top lilac" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40V20c60 0 60-20 120-20s60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20 60-20 120-20 60 20 120 20v20Z"/></svg>
+        <div class="wrap final-inner">
+          <h2><span data-i18n="finalTitle1">Seu negócio já é bom.</span><br><span data-i18n="finalTitle2">Faça mais gente saber.</span></h2>
+          <p data-i18n="finalText">Conte o que você vende e para quem. Em até dois dias úteis respondemos com um diagnóstico gratuito e os próximos passos.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#budget-calculator" data-i18n="startDDLP">Começar meu DDLP</a>
-            <a class="button button-secondary" href="#manifesto" data-i18n="readFull">Ler o manifesto</a>
+            <a class="btn btn-peach" href="mailto:matheus.calixto@ddlp.com.br?subject=Diagn%C3%B3stico%20DDLP" data-i18n="finalCta">Pedir diagnóstico gratuito</a>
+            <a class="btn btn-white" href="mailto:matheus.calixto@ddlp.com.br">matheus.calixto@ddlp.com.br</a>
           </div>
-          <strong class="final-tagline" data-i18n="finalTagline">DDLP — Investir para curtir. Curtir para continuar investindo.</strong>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <div>
-          <a class="brand" href="#top">DDLP<span>.</span></a>
-          <p data-i18n="footerPhilosophy">Disciplina, Diversão, Lazer e Paixões.<br>Irreverência com responsabilidade financeira.</p>
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 7h8.5C22.6 7 26 10.6 26 16s-3.4 9-9.5 9H8V7Zm6 13.3h2.2c2.7 0 4-1.5 4-4.3s-1.3-4.3-4-4.3H14v8.6Z" fill="#1e1b18"/><circle cx="25.5" cy="25.5" r="3" fill="var(--peach)"/></svg>
+            <span>DDLP</span>
+          </a>
+          <p data-i18n="footerTag">Design Digital, Leads e Performance.</p>
         </div>
         <div>
-          <p class="footer-label" data-i18n="project">Projeto</p>
-          <a href="https://github.com/SamuelvLopes/ddlp.com.br" target="_blank" rel="noopener" data-i18n="githubLink">Código aberto no GitHub ↗</a>
+          <p class="footer-label" data-i18n="footerServices">Serviços</p>
+          <a href="#servicos" data-i18n="b1Title">Sites e landing pages</a>
+          <a href="#servicos" data-i18n="b2Title">Identidade visual</a>
+          <a href="#servicos" data-i18n="b3Title">Funis de captação</a>
+          <a href="#servicos" data-i18n="b4Title">Tráfego pago</a>
+        </div>
+        <div>
+          <p class="footer-label" data-i18n="footerCompany">DDLP</p>
+          <a href="#processo" data-i18n="navProcess">Como trabalhamos</a>
+          <a href="#planos" data-i18n="navPlans">Planos</a>
+          <a href="#faq" data-i18n="navFaq">Dúvidas</a>
+        </div>
+        <div>
+          <p class="footer-label" data-i18n="footerContact">Contato</p>
+          <a href="mailto:matheus.calixto@ddlp.com.br">matheus.calixto@ddlp.com.br</a>
+          <a href="https://github.com/SamuelvLopes/ddlp.com.br" target="_blank" rel="noopener" data-i18n="footerSource">Código aberto no GitHub ↗</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
-        <p data-i18n="disclaimer">O Protocolo DDLP é uma filosofia de organização financeira, comportamento e qualidade de vida. Não seleciona ativos, não define carteira e não constitui recomendação de investimento.</p>
-        <p>© <span id="year"></span> DDLP</p>
+        <p>© <span id="year"></span> DDLP · ddlp.com.br</p>
+        <p data-i18n="footerNote">Números exibidos nos painéis são ilustrativos.</p>
       </div>
     </footer>
 
