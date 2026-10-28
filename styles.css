@@ -67,6 +67,8 @@ h3 { font: 600 18px/1.3 var(--sans); }
 .btn-coral { background: var(--coral); }
 .btn-ghost { background: var(--paper); }
 .btn-ink { background: var(--tinta); color: var(--creme); box-shadow: 0 3px 0 rgba(26, 22, 20, .45); }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-wa { gap: 10px; }
 .btn-sm { min-height: 40px; padding: 0 14px; font-size: 14px; border-radius: 8px; box-shadow: 0 2px 0 var(--tinta); }
 .btn-block { width: 100%; }
 .actions { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
