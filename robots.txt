@@ -1,4 +1,5 @@
-# Public content may be crawled, indexed, and used by AI systems.
+# Conteúdo público: pode ser rastreado, indexado e usado por buscadores e sistemas de IA.
 User-agent: *
 Allow: /
 
+Sitemap: https://ddlp.com.br/sitemap.xml

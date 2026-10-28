@@ -1,162 +1,131 @@
+// Portuguese is the source language: its copy lives in index.html (so search
+// engines and AI crawlers read it without running JS) and is captured at load.
+// English and Spanish are applied on demand from the dictionaries below.
 const translations = {
-  "pt-BR": {
-    skip: "Pular para o conteúdo", mainNav: "Navegação principal", navProtocol: "Protocolo", navTools: "Ferramentas", navManifesto: "Manifesto",
-    openSource: "Open source", languageNav: "Selecionar idioma", scrollLabel: "Rolar para o conteúdo",
-    heroEyebrow: "Protocolo financeiro independente · Brasil", heroCopy: "Um jeito simples de separar dinheiro para viver agora sem desmontar o plano de longo prazo.",
-    meetProtocol: "Entender o DDLP", readManifesto: "Ver manifesto", heroQuote: "“O plano só presta se você conseguir viver com ele.”",
-    problemEyebrow: "Altos e baixos", problemTitle: "A vida não sobe em linha reta. Seu orçamento também não deveria fingir que sim.", impulsiveTitle: "Aproveitar sem freio",
-    impulsiveText: "Na fase boa, gastar como se ela fosse durar para sempre tira a proteção dos períodos ruins.", or: "ou", extremistTitle: "Guardar como se hoje não existisse",
-    extremistText: "Mandar tudo para um futuro distante pode fazer o patrimônio crescer enquanto a vida fica parada.",
-    thirdWayLabel: "O ponto do DDLP", thirdWay: "Nos bons momentos, construir patrimônio e construir memórias.",
-    pressureTitle: "O desgaste escondido", pressureText: "Quem nunca se permite aproveitar começa a perguntar para que serve tanto esforço. Um limite de prazer reduz essa fricção sem abrir mão dos aportes.",
-    ratioEyebrow: "O princípio", ratioTitle: "Uma parte para viver.\nO plano continua.", ratioIntro: "O DDLP não escolhe ativos. Ele só define quanto pode virar prazer sem culpa.",
-    ratioAria: "Uma parcela da renda mais rendimentos opcionais formam o orçamento DDLP", ratioSalary: "Salário + renda extra", ratioDividends: "Dividendos, rendimentos ou ganhos opcionais", ratioBody: "O orçamento DDLP pode receber uma parcela previamente definida da renda, como 10% do salário. Dividendos, rendimentos ou outros ganhos podem complementar esse valor quando existirem, mas não são obrigatórios. Fora desse orçamento, o plano continua intacto:",
-    essential: "Despesas essenciais", family: "Responsabilidades familiares", debts: "Pagamento de dívidas", reserve: "Reserva de emergência", investments: "Investimentos e patrimônio",
-    ratioNote: "Acabou o saldo, acabou a diversão financeira daquele período. Aporte, reserva, patrimônio e cartão ficam fora da brincadeira.",
-    cycleEyebrow: "O ciclo DDLP", cycleTitle: "Ganhar, organizar, investir, aproveitar e continuar.", cycleWork: "Ganhar", cycleEarn: "Organizar", cycleInvest: "Investir",
-    cycleReceive: "Aproveitar no limite", cycleEnjoy: "Voltar melhor", cycleMotivate: "Manter aportes", cycleReturn: "e continuar investindo ↗",
-    experiencesEyebrow: "A conta é ingrata", experiencesTitle: "No começo, entra muito dinheiro na carteira e volta pouco para a vida.",
-    simpleFrequency: "Exemplo inicial", simpleTitle: "R$ 5.000 aportados", simpleText: "A construção patrimonial exige esforço antes de produzir resultados relevantes.",
-    complexFrequency: "Primeiros frutos", complexTitle: "R$ 100 em dividendos", complexText: "O valor pode parecer pequeno, mas mostra que a máquina ainda em construção já começou a funcionar.",
-    scheduleRule: "O erro é desprezar a recompensa por ser pequena. O outro erro é usar a recompensa como licença para perder o controle.",
-    dinner: "Um jantar", dinnerText: "Quando existem, dividendos podem virar recompensa concreta sem vender patrimônio.", trip: "Uma viagem", tripText: "Saldo acumulado transformado em uma memória real.",
-    hobby: "Um hobby", hobbyText: "Uma parcela planejada da renda ampliando possibilidades.", freedom: "Mais liberdade", freedomText: "Mais renda e patrimônio, mais espaço para viver sem dívida.",
-    rulesEyebrow: "As regras", rulesTitle: "Prazer planejado.\nDisciplina preservada.", rule1: "O lazer deve estar previsto no orçamento.", rule2: "Nunca use empréstimos para financiar diversão.",
-    rule3: "Não invada o aporte para continuar gastando.", rule4: "Não sacrifique a reserva ou necessidades essenciais.", rule5: "Não venda patrimônio produtivo por impulso.",
-    rule6: "Gastar é opcional; acumular o saldo também faz parte.", rule7: "Eleve o lazer quando renda, patrimônio ou resultados crescerem.", rule8: "Não sinta culpa ao gastar o valor planejado.",
-    rule9: "Priorize experiências reais, não ostentação.", rule10: "Gaste dentro do limite. Invista além da vontade.",
-    toolsEyebrow: "Do conceito ao orçamento", toolsTitle: "Calcule sua liberdade.", toolsIntro: "Use valores mensais. As estimativas são educativas e não garantem rentabilidade.",
-    budgetTitle: "Calculadora DDLP", budgetSubtitle: "Veja quanto você pode gastar sem culpa.", netSalary: "Salário líquido", extraIncome: "Renda extra", monthlyDividends: "Rendimentos opcionais",
-    desiredPercent: "Percentual da renda ativa", monthlyBudget: "Saldo DDLP disponível no mês", remaining: "Renda ativa para demais compromissos", dividendCoverage: "Parcela complementar", threeMonths: "Saldo em 3 meses", sixMonths: "Saldo em 6 meses", twelveMonths: "Saldo em 12 meses",
-    freedomCalcTitle: "Simulador de patrimônio e liberdade", freedomCalcSubtitle: "Estime o patrimônio que poderia complementar seu DDLP.", investedAssets: "Patrimônio investido",
-    monthlyContribution: "Aporte mensal", averageYield: "Rendimento médio anual", monthlyGoal: "Objetivo DDLP mensal", neededAssets: "Patrimônio estimado necessário",
-    currentMonthlyIncome: "Renda mensal estimada hoje", goalProgress: "Progresso do objetivo", estimatedTime: "Tempo estimado com aportes",
-    calcDisclaimer: "Estimativa simplificada, antes de impostos e inflação. Rentabilidade passada ou projetada não é garantia de resultado.",
-    freedomMessage: "Para gerar {goal} mensais destinados ao seu DDLP, sua carteira precisa produzir aproximadamente {annual} por ano.",
-    alreadyThere: "Objetivo alcançado", unavailable: "Não estimável", yearsMonths: "{years} ano(s) e {months} mês(es)", monthsOnly: "{months} mês(es)",
-    youthEyebrow: "A juventude também é um ativo", youthQuote: "“Nos momentos de alta, construa patrimônio e construa memórias.”",
-    youthBody: "Dinheiro, saúde, tempo e disposição não estarão sempre disponíveis na mesma proporção. Algumas experiências podem esperar; outras perdem valor quando adiadas por tempo demais.",
-    youthProvocation: "“A preocupação dele era com o amanhã. Ele morreu esta noite.”",
-    manifestoEyebrow: "Manifesto DDLP", manifestoTitle: "Investir para curtir.\nCurtir para continuar investindo.",
-    manifesto1: "Não queremos chegar ricos à aposentadoria e pobres de experiências.", manifesto2: "O investidor não deve abandonar a vida para construir patrimônio.",
-    manifesto3: "Aproveitar os altos com consciência ajuda a atravessar os baixos com sentido.", manifesto4: "O DDLP não ensina onde investir; ensina como continuar investindo.", manifesto5: "O prazer planejado fortalece a disciplina.",
-    manifesto6: "Quem quer curtir mais precisa construir mais.", manifesto7: "Reserve uma parte para aproveitar o caminho.",
-    profilesEyebrow: "Três filosofias", profilesTitle: "Nem descontrole. Nem abstinência.", consumerProfile: "Consumidor impulsivo", consumer1: "Gasta sem planejamento", consumer2: "Usa dívidas",
-    consumer3: "Não constrói patrimônio", consumer4: "Busca apenas prazer imediato", extremistProfile: "Investidor extremista", extreme1: "Investe praticamente tudo", extreme2: "Sente culpa ao gastar",
-    extreme3: "Adia todas as experiências", extreme4: "Pode compensar com uma grande compra impulsiva", ddlpProfile: "Investidor DDLP", ddlp1: "Investe mais de 40% ou 50% com consistência", ddlp2: "Planeja o lazer sem dívida",
-    ddlp3: "Usa prazer planejado para sustentar disciplina", ddlp4: "Equilibra presente e futuro",
-    finalEyebrow: "Invest to Live", finalTitle: "Construa patrimônio sem abandonar a própria vida.", finalText: "Aproveitar os altos com consciência não é irresponsabilidade. É impedir que uma vida organizada no extrato vire uma vida frustrada por dentro.",
-    startDDLP: "Começar meu DDLP", readFull: "Ler o manifesto", finalTagline: "DDLP — Investir para curtir. Curtir para continuar investindo.",
-    footerPhilosophy: "Disciplina, Diversão, Lazer e Paixões.\nIrreverência com responsabilidade financeira.", project: "Projeto", githubLink: "Código aberto no GitHub ↗",
-    disclaimer: "O Protocolo DDLP é uma filosofia de organização financeira, comportamento e qualidade de vida. Não seleciona ativos, não define carteira e não constitui recomendação de investimento.",
-    description: "DDLP Protocol — um protocolo comportamental para continuar investindo sem deixar de viver."
-  },
   en: {
-    skip: "Skip to content", mainNav: "Main navigation", navProtocol: "Protocol", navTools: "Tools", navManifesto: "Manifesto",
-    openSource: "Open source", languageNav: "Select language", scrollLabel: "Scroll to content",
-    heroEyebrow: "Independent financial protocol · Brazil", heroCopy: "A behavioral protocol for people who want to keep investing for the long term without turning wealth-building into permanent deprivation.",
-    meetProtocol: "Explore the protocol", readManifesto: "Read the manifesto", heroQuote: "“Wealth without life is not freedom.”",
-    problemEyebrow: "Highs and lows", problemTitle: "Life does not grow in a straight line. Planning should not ignore that.", impulsiveTitle: "Enjoy without limits",
-    impulsiveText: "When life is favorable, spending as if it will last forever destroys the security needed to cross difficult periods.", or: "or", extremistTitle: "Save as if the present did not exist",
-    extremistText: "People who direct absolutely everything to a distant future may see wealth grow while life does not keep up.", thirdWayLabel: "The third way", thirdWay: "Build wealth and build memories during favorable moments.",
-    pressureTitle: "The frustration trap", pressureText: "People who never allow themselves to enjoy life may start feeling that they work, save, and invest without knowing what for. Conscious pleasure prevents that wear and helps sustain the strategy for decades.",
-    ratioEyebrow: "The principle", ratioTitle: "A share of income.\nOptional rewards.", ratioIntro: "DDLP does not define your portfolio. It defines a pleasure limit to live better and keep investing.",
-    ratioAria: "A share of income plus optional returns form the DDLP budget", ratioSalary: "Salary + extra income", ratioDividends: "Dividends, returns, or optional gains", ratioBody: "The DDLP budget may receive a predefined share of income, such as 10% of salary. Dividends, returns, or other gains may complement that amount when they exist, but they are not mandatory. Outside this budget, the plan stays intact:",
-    essential: "Essential expenses", family: "Family responsibilities", debts: "Debt payments", reserve: "Emergency fund", investments: "Investments and wealth",
-    ratioNote: "When the balance ends, that period's financial fun also ends. Do not invade contributions, reserves, assets, or credit cards.",
-    cycleEyebrow: "The DDLP cycle", cycleTitle: "The sustainable cycle is simple: earn, organize, invest, enjoy, and keep investing.", cycleWork: "Earn", cycleEarn: "Organize", cycleInvest: "Invest",
-    cycleReceive: "Enjoy within the limit", cycleEnjoy: "Return motivated", cycleMotivate: "Maintain contributions", cycleReturn: "and invest even more ↗",
-    experiencesEyebrow: "The math is harsh", experiencesTitle: "At first, a lot of money enters the portfolio and little returns immediately to life.",
-    simpleFrequency: "Initial example", simpleTitle: "R$ 5,000 contributed", simpleText: "Wealth-building requires effort before producing relevant results.",
-    complexFrequency: "First fruits", complexTitle: "R$ 100 in dividends", complexText: "The amount may look small, but it shows that the machine still being built has started to work.",
-    scheduleRule: "The mistake is dismissing the reward because it is small, or using it as an excuse to spend beyond the limit.",
-    dinner: "A dinner", dinnerText: "When they exist, dividends can become a concrete reward without selling assets.", trip: "A trip", tripText: "Accumulated balance transformed into a real memory.",
-    hobby: "A hobby", hobbyText: "A planned share of income expanding possibilities.", freedom: "More freedom", freedomText: "More income and wealth, more room to live without debt.",
-    rulesEyebrow: "The rules", rulesTitle: "Planned pleasure.\nDiscipline preserved.", rule1: "Leisure must be planned in the budget.", rule2: "Never use loans to finance fun.",
-    rule3: "Do not invade contributions to keep spending.", rule4: "Do not sacrifice your reserve or essentials.", rule5: "Do not sell productive assets on impulse.",
-    rule6: "Spending is optional; accumulating the balance is part of the plan.", rule7: "Raise your leisure budget when income, wealth, or results grow.", rule8: "Do not feel guilty about spending the planned amount.",
-    rule9: "Prioritize real experiences over status.", rule10: "Spend within the limit. Invest beyond the urge.",
-    toolsEyebrow: "From concept to budget", toolsTitle: "Calculate your freedom.", toolsIntro: "Use monthly values. Estimates are educational and do not guarantee returns.",
-    budgetTitle: "DDLP calculator", budgetSubtitle: "See how much you may spend without guilt.", netSalary: "Net salary", extraIncome: "Extra income", monthlyDividends: "Optional returns",
-    desiredPercent: "Active-income percentage", monthlyBudget: "DDLP balance available this month", remaining: "Active income for other commitments", dividendCoverage: "Complementary share", threeMonths: "Balance in 3 months", sixMonths: "Balance in 6 months", twelveMonths: "Balance in 12 months",
-    freedomCalcTitle: "Wealth and freedom simulator", freedomCalcSubtitle: "Estimate the wealth that could complement your DDLP.", investedAssets: "Invested assets",
-    monthlyContribution: "Monthly contribution", averageYield: "Average annual yield", monthlyGoal: "Monthly DDLP goal", neededAssets: "Estimated assets needed",
-    currentMonthlyIncome: "Estimated monthly income today", goalProgress: "Goal progress", estimatedTime: "Estimated time with contributions",
-    calcDisclaimer: "Simplified estimate before taxes and inflation. Past or projected returns do not guarantee results.",
-    freedomMessage: "To generate {goal} per month for your DDLP, your portfolio needs to produce approximately {annual} per year.",
-    alreadyThere: "Goal reached", unavailable: "Not estimable", yearsMonths: "{years} year(s) and {months} month(s)", monthsOnly: "{months} month(s)",
-    youthEyebrow: "Youth is also an asset", youthQuote: "“During the highs, build wealth and build memories.”",
-    youthBody: "Money, health, time, and energy will not always be available in the same proportion. Some experiences can wait; others lose value when postponed for too long.",
-    youthProvocation: "“He was worried about tomorrow. He died tonight.”",
-    manifestoEyebrow: "DDLP manifesto", manifestoTitle: "Invest to enjoy.\nEnjoy to keep investing.",
-    manifesto1: "We do not want to reach retirement rich in money and poor in experiences.", manifesto2: "Investors should not abandon life to build wealth.",
-    manifesto3: "Enjoying the highs consciously helps you cross the lows with meaning.", manifesto4: "DDLP does not teach where to invest; it teaches how to keep investing.", manifesto5: "Planned pleasure strengthens discipline.",
-    manifesto6: "Those who want to enjoy more need to build more.", manifesto7: "Reserve a share to enjoy the way there.",
-    profilesEyebrow: "Three philosophies", profilesTitle: "Neither excess nor abstinence.", consumerProfile: "Impulsive consumer", consumer1: "Spends without planning", consumer2: "Uses debt",
-    consumer3: "Builds no wealth", consumer4: "Seeks only immediate pleasure", extremistProfile: "Extreme investor", extreme1: "Invests almost everything", extreme2: "Feels guilty when spending",
-    extreme3: "Postpones every experience", extreme4: "May compensate with a large impulsive purchase", ddlpProfile: "DDLP investor", ddlp1: "Consistently invests more than 40% or 50%", ddlp2: "Plans debt-free leisure",
-    ddlp3: "Uses planned pleasure to sustain discipline", ddlp4: "Balances present and future",
-    finalEyebrow: "Invest to Live", finalTitle: "Build wealth without abandoning your own life.", finalText: "Enjoying the highs consciously is not irresponsibility. It prevents a financially organized life from becoming an emotionally frustrated life.",
-    startDDLP: "Start my DDLP", readFull: "Read the manifesto", finalTagline: "DDLP — Invest to enjoy. Enjoy to keep investing.",
-    footerPhilosophy: "Discipline, Fun, Leisure and Passions.\nIrreverence with financial responsibility.", project: "Project", githubLink: "Open source on GitHub ↗",
-    disclaimer: "The DDLP Protocol is a philosophy of financial organization, behavior, and quality of life. It does not select assets, define portfolios, or constitute investment advice.",
-    description: "DDLP Protocol — a behavioral protocol for continuing to invest without ceasing to live."
+    skip: "Skip to content", brandLabel: "DDLP, back to top", mainNav: "Main navigation", languageNav: "Select language",
+    navServices: "Services", navProcess: "How it works", navPlans: "Plans", navFaq: "FAQ", navCta: "Talk to us",
+    heroEyebrow: "Digital design, leads and performance agency",
+    heroTitle1: "Design that attracts.", heroTitle2: "Leads that convert.",
+    heroLead: "DDLP builds websites and landing pages, sets up your lead funnel and runs your campaigns. All measured, from the first click to the closed deal.",
+    ctaPrimary: "I want more leads", ctaSecondary: "See services",
+    fanD: "Design", fanDigital: "Digital", fanMsgTag: "New lead", fanL: "Leads", fanP: "Performance",
+    tk1: "Landing pages", tk2: "Company websites", tk3: "Visual identity", tk4: "Lead funnels", tk5: "WhatsApp + CRM", tk6: "A/B tests", tk7: "Monthly reports",
+    aboutEyebrow: "In one sentence", aboutTitle: "What is DDLP?",
+    aboutAnswer: "DDLP is an agency that brings digital design, lead capture and performance into one team, so businesses that sell through conversations turn visits into customers.",
+    fact1Label: "Who it's for", fact1: "Clinics, service providers, firms, schools and B2B companies.",
+    fact2Label: "What it delivers", fact2: "Page, lead funnel and campaign management, all connected.",
+    fact3Label: "How it measures", fact3: "Leads, cost per lead and sales, not likes.",
+    servicesEyebrow: "Services", servicesTitle: "What does DDLP do?",
+    servicesText: "Three fronts that work better together. You can start with one and add the others when it makes sense.",
+    dTitle: "Digital design", dText: "Fast pages and consistent brands, built for one action: getting the visitor to reach out.",
+    d1: "Conversion landing pages", d2: "Company websites", d3: "Visual identity and logo", d4: "Social and ad creatives",
+    lTitle: "Leads", lText: "Every contact arrives qualified and goes straight to whoever sells, with no forgotten spreadsheet.",
+    l1: "Forms that qualify", l2: "WhatsApp with auto-replies", l3: "CRM integration", l4: "A funnel with clear stages",
+    pTitle: "Performance", pText: "Budget goes where leads come cheapest, and you know where every sale comes from.",
+    p1: "Meta, Google and TikTok Ads management", p2: "Pixel, GA4 and conversions", p3: "Ongoing A/B tests", p4: "A monthly report in plain language",
+    whyEyebrow: "Why one team", whyTitle: "Why bring design, leads and performance together?",
+    whyText: "Because results depend on all three talking to each other. When each vendor handles one piece, nobody owns the whole.",
+    tableCaption: "Comparison between separate vendors and DDLP", thTopic: "Topic", thSplit: "Separate vendors", thDdlp: "DDLP",
+    r1: "Who owns the result", r1a: "Each one their own piece", r1b: "One team, from click to sale",
+    r2: "Page and ad", r2a: "Made at different times", r2b: "Built together, with the same offer",
+    r3: "Tracking", r3a: "Stops at the click or the form", r3b: "Runs until the lead becomes a customer",
+    r4: "Reporting", r4a: "Several, each with its own metric", r4b: "One, with leads, cost and sales",
+    processEyebrow: "Process", processTitle: "How does working with DDLP work?", processText: "Four stages, clear deadlines, and you following each one.",
+    s1Title: "Free assessment", s1Text: "We learn the business, the audience and where the funnel is losing contacts today.",
+    s2Title: "Design", s2Text: "We create the page and assets with your offer and your brand identity.",
+    s3Title: "Launch", s3Text: "We publish, switch on campaigns and check every conversion event.",
+    s4Title: "Optimization", s4Text: "We track the numbers, test improvements and report every month.",
+    plansEyebrow: "Plans", plansTitle: "How much does DDLP cost?",
+    plansText: "Pricing depends on scope and comes after the free assessment, with no surprises. Pick where to start.",
+    pl1Name: "Presence", pl1For: "To start the right way.", pl1i1: "Landing page or company website", pl1i2: "Essential visual identity", pl1i3: "Form and WhatsApp button", pl1i4: "GA4 and Pixel set up",
+    planCta: "Get a quote", plBadge: "Most popular",
+    pl2Name: "Capture", pl2For: "To generate leads every month.", pl2i1: "Everything in Presence", pl2i2: "Paid media management", pl2i3: "Funnel connected to your CRM", pl2i4: "Monthly results report",
+    pl3Name: "Scale", pl3For: "To grow with data.", pl3i1: "Everything in Capture", pl3i2: "Ongoing A/B tests", pl3i3: "Multiple channels and pages", pl3i4: "Bi-weekly performance meeting",
+    faqEyebrow: "Questions", faqTitle: "Frequently asked questions", faqText: "Didn't find yours? Send it to the email at the end of the page.",
+    q1: "What does DDLP stand for?", a1: "DDLP stands for Design Digital, Leads e Performance — Portuguese for digital design, leads and performance. They are the three fronts the agency runs together: the page that attracts, the funnel that captures and the management that measures and improves results.",
+    q2: "What kind of business does DDLP work with?", a2: "Businesses that sell through conversations: clinics, service providers, firms, schools and B2B companies that depend on leads to close sales.",
+    q3: "How long does a landing page take?", a3: "A landing page is usually ready two to three weeks after the assessment, revisions included.",
+    q4: "Is the ad budget included?", a4: "No. The budget is paid directly to the platforms, from the client's account. DDLP handles strategy, campaign management and reporting.",
+    q5: "Do I need a website or CRM to start?", a5: "No. If you have one, DDLP keeps what works. If not, it builds from scratch with easy-to-use tools.",
+    q6: "Is there a minimum contract?", a6: "Design projects have a fixed scope. Performance management is monthly, with terms agreed in the proposal.",
+    q7: "Does DDLP guarantee a number of leads?", a7: "No. No number is guaranteed before testing. DDLP guarantees method, transparency and a clear report of what was done and what comes next.",
+    q8: "How do I start working with DDLP?", a8: "Email matheus.calixto@ddlp.com.br telling us what you sell and to whom. You'll get a reply within two business days, with a free assessment.",
+    ctaTitle: "Shall we get more people to know your business?",
+    ctaText: "Tell us what you sell and to whom. Within two business days we reply with a free assessment and the next steps.",
+    ctaButton: "Get a free assessment",
+    footerTag: "Design Digital, Leads e Performance.", footerServices: "Services", footerAbout: "What is DDLP", footerContact: "Contact", footerSource: "Open source on GitHub ↗",
+    title: "DDLP — Digital Design, Leads & Performance Agency",
+    description: "DDLP builds websites and landing pages, sets up lead funnels and runs paid media campaigns, all measured from the first click to the closed deal."
   },
   es: {
-    skip: "Saltar al contenido", mainNav: "Navegación principal", navProtocol: "Protocolo", navTools: "Herramientas", navManifesto: "Manifiesto",
-    openSource: "Código abierto", languageNav: "Seleccionar idioma", scrollLabel: "Bajar al contenido",
-    heroEyebrow: "Protocolo financiero independiente · Brasil", heroCopy: "Un protocolo conductual para quienes quieren seguir invirtiendo a largo plazo sin convertir la construcción patrimonial en privación permanente.",
-    meetProtocol: "Conoce el protocolo", readManifesto: "Lee el manifiesto", heroQuote: "“Patrimonio sin vida no es libertad.”",
-    problemEyebrow: "Altos y bajos", problemTitle: "La vida no crece en línea recta. La planificación tampoco debería ignorarlo.", impulsiveTitle: "Disfrutar sin límite",
-    impulsiveText: "Cuando la etapa es buena, gastar como si fuera a durar para siempre destruye la seguridad necesaria para atravesar los períodos difíciles.", or: "o", extremistTitle: "Guardar como si el presente no existiera",
-    extremistText: "Quien dirige absolutamente todo a un futuro lejano puede ver crecer su patrimonio mientras la vida no acompaña.", thirdWayLabel: "El tercer camino", thirdWay: "Construir patrimonio y construir recuerdos en los momentos favorables.",
-    pressureTitle: "La trampa de la frustración", pressureText: "La persona que nunca se permite disfrutar puede empezar a sentir que trabaja, ahorra e invierte sin saber para qué. El placer consciente evita ese desgaste y ayuda a sostener la estrategia durante décadas.",
-    ratioEyebrow: "El principio", ratioTitle: "Una parte del ingreso.\nRecompensas opcionales.", ratioIntro: "DDLP no define tu cartera. Define un límite de placer para vivir mejor y seguir invirtiendo.",
-    ratioAria: "Una parte del ingreso más rendimientos opcionales forman el presupuesto DDLP", ratioSalary: "Salario + ingresos extra", ratioDividends: "Dividendos, rendimientos o ganancias opcionales", ratioBody: "El presupuesto DDLP puede recibir una parte previamente definida del ingreso, como el 10% del salario. Dividendos, rendimientos u otras ganancias pueden complementar ese valor cuando existan, pero no son obligatorios. Fuera de este presupuesto, el plan permanece intacto:",
-    essential: "Gastos esenciales", family: "Responsabilidades familiares", debts: "Pago de deudas", reserve: "Fondo de emergencia", investments: "Inversiones y patrimonio",
-    ratioNote: "Cuando el saldo termina, la diversión financiera de ese período también termina. No se invade el aporte, la reserva, el patrimonio ni la tarjeta de crédito.",
-    cycleEyebrow: "El ciclo DDLP", cycleTitle: "El ciclo sostenible es simple: ganar, organizar, invertir, disfrutar y seguir invirtiendo.", cycleWork: "Ganar", cycleEarn: "Organizar", cycleInvest: "Invertir",
-    cycleReceive: "Disfrutar dentro del límite", cycleEnjoy: "Volver motivado", cycleMotivate: "Mantener aportes", cycleReturn: "e invertir aún más ↗",
-    experiencesEyebrow: "La cuenta es ingrata", experiencesTitle: "Al inicio, mucho dinero entra en la cartera y poco vuelve inmediatamente a la vida.",
-    simpleFrequency: "Ejemplo inicial", simpleTitle: "R$ 5.000 aportados", simpleText: "La construcción patrimonial exige esfuerzo antes de producir resultados relevantes.",
-    complexFrequency: "Primeros frutos", complexTitle: "R$ 100 en dividendos", complexText: "El valor puede parecer pequeño, pero muestra que la máquina aún en construcción ya empezó a funcionar.",
-    scheduleRule: "El error es despreciar la recompensa por ser pequeña o usarla como justificación para gastar por encima del límite.",
-    dinner: "Una cena", dinnerText: "Cuando existen, los dividendos pueden convertirse en una recompensa concreta sin vender patrimonio.", trip: "Un viaje", tripText: "Saldo acumulado convertido en un recuerdo real.",
-    hobby: "Un hobby", hobbyText: "Una parte planificada del ingreso amplía posibilidades.", freedom: "Más libertad", freedomText: "Más ingresos y patrimonio, más espacio para vivir sin deuda.",
-    rulesEyebrow: "Las reglas", rulesTitle: "Placer planificado.\nDisciplina preservada.", rule1: "El ocio debe estar previsto en el presupuesto.", rule2: "Nunca uses préstamos para financiar diversión.",
-    rule3: "No invadas el aporte para seguir gastando.", rule4: "No sacrifiques la reserva ni las necesidades esenciales.", rule5: "No vendas activos productivos por impulso.",
-    rule6: "Gastar es opcional; acumular el saldo también forma parte.", rule7: "Eleva el ocio cuando aumenten ingresos, patrimonio o resultados.", rule8: "No sientas culpa al gastar el valor planificado.",
-    rule9: "Prioriza experiencias reales, no ostentación.", rule10: "Gasta dentro del límite. Invierte más allá de las ganas.",
-    toolsEyebrow: "Del concepto al presupuesto", toolsTitle: "Calcula tu libertad.", toolsIntro: "Usa valores mensuales. Las estimaciones son educativas y no garantizan rentabilidad.",
-    budgetTitle: "Calculadora DDLP", budgetSubtitle: "Mira cuánto puedes gastar sin culpa.", netSalary: "Salario neto", extraIncome: "Ingresos extra", monthlyDividends: "Rendimientos opcionales",
-    desiredPercent: "Porcentaje del ingreso activo", monthlyBudget: "Saldo DDLP disponible este mes", remaining: "Ingreso activo para otros compromisos", dividendCoverage: "Parte complementaria", threeMonths: "Saldo en 3 meses", sixMonths: "Saldo en 6 meses", twelveMonths: "Saldo en 12 meses",
-    freedomCalcTitle: "Simulador de patrimonio y libertad", freedomCalcSubtitle: "Estima el patrimonio que podría complementar tu DDLP.", investedAssets: "Patrimonio invertido",
-    monthlyContribution: "Aporte mensual", averageYield: "Rendimiento medio anual", monthlyGoal: "Objetivo DDLP mensual", neededAssets: "Patrimonio estimado necesario",
-    currentMonthlyIncome: "Ingreso mensual estimado hoy", goalProgress: "Progreso del objetivo", estimatedTime: "Tiempo estimado con aportes",
-    calcDisclaimer: "Estimación simplificada, antes de impuestos e inflación. La rentabilidad pasada o proyectada no garantiza resultados.",
-    freedomMessage: "Para generar {goal} mensuales para tu DDLP, tu cartera debe producir aproximadamente {annual} al año.",
-    alreadyThere: "Objetivo alcanzado", unavailable: "No estimable", yearsMonths: "{years} año(s) y {months} mes(es)", monthsOnly: "{months} mes(es)",
-    youthEyebrow: "La juventud también es un activo", youthQuote: "“En los momentos de alta, construye patrimonio y construye recuerdos.”",
-    youthBody: "Dinero, salud, tiempo y disposición no estarán siempre disponibles en la misma proporción. Algunas experiencias pueden esperar; otras pierden valor cuando se aplazan demasiado.",
-    youthProvocation: "“Su preocupación era el mañana. Murió esta noche.”",
-    manifestoEyebrow: "Manifiesto DDLP", manifestoTitle: "Invertir para disfrutar.\nDisfrutar para seguir invirtiendo.",
-    manifesto1: "No queremos llegar ricos a la jubilación y pobres de experiencias.", manifesto2: "El inversor no debe abandonar la vida para construir patrimonio.",
-    manifesto3: "Disfrutar los altos con conciencia ayuda a atravesar los bajos con sentido.", manifesto4: "DDLP no enseña dónde invertir; enseña cómo seguir invirtiendo.", manifesto5: "El placer planificado fortalece la disciplina.",
-    manifesto6: "Quien quiere disfrutar más necesita construir más.", manifesto7: "Reserva una parte para disfrutar el camino.",
-    profilesEyebrow: "Tres filosofías", profilesTitle: "Ni descontrol. Ni abstinencia.", consumerProfile: "Consumidor impulsivo", consumer1: "Gasta sin planificación", consumer2: "Usa deudas",
-    consumer3: "No construye patrimonio", consumer4: "Busca solo placer inmediato", extremistProfile: "Inversor extremista", extreme1: "Invierte prácticamente todo", extreme2: "Siente culpa al gastar",
-    extreme3: "Aplaza todas las experiencias", extreme4: "Puede compensar con una gran compra impulsiva", ddlpProfile: "Inversor DDLP", ddlp1: "Invierte más del 40% o 50% con constancia", ddlp2: "Planifica el ocio sin deuda",
-    ddlp3: "Usa placer planificado para sostener disciplina", ddlp4: "Equilibra presente y futuro",
-    finalEyebrow: "Invest to Live", finalTitle: "Construye patrimonio sin abandonar tu propia vida.", finalText: "Disfrutar los altos con conciencia no es irresponsabilidad. Es impedir que una vida financieramente organizada se transforme en una vida emocionalmente frustrada.",
-    startDDLP: "Empezar mi DDLP", readFull: "Leer el manifiesto", finalTagline: "DDLP — Invertir para disfrutar. Disfrutar para seguir invirtiendo.",
-    footerPhilosophy: "Disciplina, Diversión, Ocio y Pasiones.\nIrreverencia con responsabilidad financiera.", project: "Proyecto", githubLink: "Código abierto en GitHub ↗",
-    disclaimer: "El Protocolo DDLP es una filosofía de organización financiera, comportamiento y calidad de vida. No selecciona activos, no define carteras y no constituye recomendación de inversión.",
-    description: "DDLP Protocol — un protocolo conductual para seguir invirtiendo sin dejar de vivir."
+    skip: "Saltar al contenido", brandLabel: "DDLP, volver al inicio", mainNav: "Navegación principal", languageNav: "Seleccionar idioma",
+    navServices: "Servicios", navProcess: "Cómo funciona", navPlans: "Planes", navFaq: "Preguntas", navCta: "Hablemos",
+    heroEyebrow: "Agencia de diseño digital, leads y performance",
+    heroTitle1: "Diseño que atrae.", heroTitle2: "Leads que convierten.",
+    heroLead: "DDLP crea sitios y landing pages, arma tu embudo de captación y gestiona tus campañas. Todo medido, del primer clic al cliente cerrado.",
+    ctaPrimary: "Quiero más leads", ctaSecondary: "Ver servicios",
+    fanD: "Diseño", fanDigital: "Digital", fanMsgTag: "Nuevo lead", fanL: "Leads", fanP: "Performance",
+    tk1: "Landing pages", tk2: "Sitios institucionales", tk3: "Identidad visual", tk4: "Embudos de captación", tk5: "WhatsApp + CRM", tk6: "Pruebas A/B", tk7: "Informes mensuales",
+    aboutEyebrow: "En una frase", aboutTitle: "¿Qué es DDLP?",
+    aboutAnswer: "DDLP es una agencia que une diseño digital, captación de leads y performance en un solo equipo, para que negocios que venden por contacto conviertan visitas en clientes.",
+    fact1Label: "Para quién", fact1: "Clínicas, prestadores de servicios, estudios, escuelas y empresas B2B.",
+    fact2Label: "Qué entrega", fact2: "Página, embudo de captación y gestión de campañas, conectados.",
+    fact3Label: "Cómo mide", fact3: "Leads, costo por lead y ventas, no likes.",
+    servicesEyebrow: "Servicios", servicesTitle: "¿Qué hace DDLP?",
+    servicesText: "Tres frentes que funcionan mejor juntos. Puedes empezar por uno y sumar los otros cuando tenga sentido.",
+    dTitle: "Diseño digital", dText: "Páginas rápidas y marcas consistentes, pensadas para una acción: que el visitante te contacte.",
+    d1: "Landing pages de conversión", d2: "Sitios institucionales", d3: "Identidad visual y logo", d4: "Piezas para redes y anuncios",
+    lTitle: "Leads", lText: "Cada contacto llega calificado y va directo a quien vende, sin planillas olvidadas.",
+    l1: "Formularios que califican", l2: "WhatsApp con respuesta automática", l3: "Integración con CRM", l4: "Embudo con etapas claras",
+    pTitle: "Performance", pText: "El presupuesto va donde el lead sale más barato, y sabes de dónde viene cada venta.",
+    p1: "Gestión de Meta, Google y TikTok Ads", p2: "Pixel, GA4 y conversiones", p3: "Pruebas A/B continuas", p4: "Informe mensual en lenguaje claro",
+    whyEyebrow: "Por qué un solo equipo", whyTitle: "¿Por qué juntar diseño, leads y performance?",
+    whyText: "Porque el resultado depende de que las tres partes conversen. Cuando cada proveedor cuida un pedazo, nadie responde por el todo.",
+    tableCaption: "Comparación entre proveedores separados y DDLP", thTopic: "Tema", thSplit: "Proveedores separados", thDdlp: "DDLP",
+    r1: "Quién responde por el resultado", r1a: "Cada uno por su parte", r1b: "Un equipo, del clic a la venta",
+    r2: "Página y anuncio", r2a: "Hechos en momentos distintos", r2b: "Creados juntos, con la misma oferta",
+    r3: "Medición", r3a: "Se detiene en el clic o el formulario", r3b: "Llega hasta que el lead se vuelve cliente",
+    r4: "Informe", r4a: "Varios, cada uno con su métrica", r4b: "Uno solo, con leads, costo y ventas",
+    processEyebrow: "Proceso", processTitle: "¿Cómo es trabajar con DDLP?", processText: "En cuatro etapas, con plazos claros y tú siguiendo cada una.",
+    s1Title: "Diagnóstico gratuito", s1Text: "Entendemos el negocio, el público y dónde el embudo está perdiendo contactos hoy.",
+    s2Title: "Diseño", s2Text: "Creamos la página y las piezas con la oferta y la identidad de tu marca.",
+    s3Title: "Lanzamiento", s3Text: "Publicamos, activamos las campañas y revisamos cada evento de conversión.",
+    s4Title: "Optimización", s4Text: "Seguimos los números, probamos mejoras e informamos cada mes.",
+    plansEyebrow: "Planes", plansTitle: "¿Cuánto cuesta contratar a DDLP?",
+    plansText: "El precio depende del alcance y sale después del diagnóstico gratuito, sin sorpresas. Elige por dónde empezar.",
+    pl1Name: "Presencia", pl1For: "Para empezar bien.", pl1i1: "Landing page o sitio institucional", pl1i2: "Identidad visual esencial", pl1i3: "Formulario y botón de WhatsApp", pl1i4: "GA4 y Pixel configurados",
+    planCta: "Pedir presupuesto", plBadge: "El más elegido",
+    pl2Name: "Captación", pl2For: "Para generar leads cada mes.", pl2i1: "Todo lo de Presencia", pl2i2: "Gestión de tráfico pago", pl2i3: "Embudo integrado al CRM", pl2i4: "Informe mensual de resultados",
+    pl3Name: "Escala", pl3For: "Para crecer con datos.", pl3i1: "Todo lo de Captación", pl3i2: "Pruebas A/B continuas", pl3i3: "Varios canales y páginas", pl3i4: "Reunión quincenal de performance",
+    faqEyebrow: "Preguntas", faqTitle: "Preguntas frecuentes", faqText: "¿No encontraste la tuya? Envíala al correo del final de la página.",
+    q1: "¿Qué significa DDLP?", a1: "DDLP significa Design Digital, Leads e Performance: diseño digital, leads y performance. Son los tres frentes que la agencia trabaja juntos: la página que atrae, el embudo que capta y la gestión que mide y mejora el resultado.",
+    q2: "¿Con qué tipo de negocios trabaja DDLP?", a2: "Con negocios que venden por contacto: clínicas, prestadores de servicios, estudios, escuelas y empresas B2B que dependen de leads para cerrar ventas.",
+    q3: "¿En cuánto tiempo está lista una landing page?", a3: "Una landing page suele estar lista de dos a tres semanas después del diagnóstico, con revisiones incluidas.",
+    q4: "¿El presupuesto de anuncios está incluido?", a4: "No. Se paga directo a las plataformas, desde la cuenta del cliente. DDLP se ocupa de la estrategia, la gestión de campañas y los informes.",
+    q5: "¿Necesito tener sitio o CRM para empezar?", a5: "No. Si ya tienes, DDLP aprovecha lo que funciona. Si no, lo arma desde cero con herramientas fáciles de usar.",
+    q6: "¿Hay permanencia mínima?", a6: "Los proyectos de diseño tienen alcance cerrado. La gestión de performance es mensual, con condiciones acordadas en la propuesta.",
+    q7: "¿DDLP garantiza una cantidad de leads?", a7: "No. Ningún número se garantiza antes de probar. DDLP garantiza método, transparencia y un informe claro de lo que se hizo y de lo que viene.",
+    q8: "¿Cómo empiezo a trabajar con DDLP?", a8: "Escribe a matheus.calixto@ddlp.com.br contando qué vendes y a quién. La respuesta llega en hasta dos días hábiles, con un diagnóstico gratuito.",
+    ctaTitle: "¿Hacemos que más gente conozca tu negocio?",
+    ctaText: "Cuéntanos qué vendes y a quién. En hasta dos días hábiles respondemos con un diagnóstico gratuito y los próximos pasos.",
+    ctaButton: "Pedir diagnóstico gratuito",
+    footerTag: "Design Digital, Leads e Performance.", footerServices: "Servicios", footerAbout: "Qué es DDLP", footerContact: "Contacto", footerSource: "Código abierto en GitHub ↗",
+    title: "DDLP — Agencia de Diseño Digital, Leads y Performance",
+    description: "DDLP crea sitios y landing pages, arma embudos de captación de leads y gestiona campañas de tráfico pago, todo medido del primer clic al cliente cerrado."
   }
 };
 
-const locales = { "pt-BR": "pt-BR", en: "en-US", es: "es-ES" };
-let currentLanguage = "pt-BR";
+const pt = {};
+document.querySelectorAll("[data-i18n]").forEach((node) => {
+  if (!(node.dataset.i18n in pt)) pt[node.dataset.i18n] = node.textContent;
+});
+document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+  pt[node.dataset.i18nAriaLabel] ??= node.getAttribute("aria-label");
+});
+pt.title = document.title;
+pt.description = document.querySelector('meta[name="description"]').getAttribute("content");
+translations["pt-BR"] = pt;
 
 function savedLanguage() {
   try { return localStorage.getItem("ddlp-language"); } catch { return null; }
@@ -171,114 +140,38 @@ function detectLanguage() {
   return "pt-BR";
 }
 
-function currency(value) {
-  return new Intl.NumberFormat(locales[currentLanguage], {
-    style: "currency", currency: "BRL", maximumFractionDigits: 0
-  }).format(Number.isFinite(value) ? value : 0);
-}
-
-function value(id) {
-  return Math.max(0, Number(document.getElementById(id)?.value) || 0);
-}
-
 function setLanguage(language) {
-  currentLanguage = translations[language] ? language : "pt-BR";
-  const copy = translations[currentLanguage];
-  document.documentElement.lang = currentLanguage;
-
+  const current = translations[language] ? language : "pt-BR";
+  const copy = translations[current];
+  document.documentElement.lang = current;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
-    const text = copy[node.dataset.i18n];
+    const text = copy[node.dataset.i18n] ?? pt[node.dataset.i18n];
     if (text) node.textContent = text;
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
-    const text = copy[node.dataset.i18nAriaLabel];
+    const text = copy[node.dataset.i18nAriaLabel] ?? pt[node.dataset.i18nAriaLabel];
     if (text) node.setAttribute("aria-label", text);
   });
   document.querySelectorAll("[data-lang]").forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.lang === currentLanguage));
+    button.setAttribute("aria-pressed", String(button.dataset.lang === current));
   });
-
-  document.title = "DDLP Protocol — Invest to Live";
+  document.title = copy.title;
   document.querySelector('meta[name="description"]')?.setAttribute("content", copy.description);
-  try { localStorage.setItem("ddlp-language", currentLanguage); } catch { /* Selection still applies. */ }
-  calculateBudget();
-  calculateFreedom();
-}
-
-function calculateBudget() {
-  const activeIncome = value("salary") + value("extra");
-  const percentage = value("percentage");
-  const dividends = value("dividends");
-  const budget = activeIncome * percentage / 100 + dividends;
-  const coverage = budget > 0 ? Math.min(999, dividends / budget * 100) : 0;
-
-  document.getElementById("percent-output").textContent = `${percentage}%`;
-  document.getElementById("budget-result").textContent = currency(budget);
-  document.getElementById("remaining-result").textContent = currency(activeIncome * (1 - percentage / 100));
-  document.getElementById("coverage-result").textContent = `${Math.round(coverage)}%`;
-  document.getElementById("three-result").textContent = currency(budget * 3);
-  document.getElementById("six-result").textContent = currency(budget * 6);
-  document.getElementById("twelve-result").textContent = currency(budget * 12);
-}
-
-function timeToGoal(assets, contribution, annualYield, needed) {
-  if (assets >= needed) return translations[currentLanguage].alreadyThere;
-  const monthlyRate = Math.pow(1 + annualYield / 100, 1 / 12) - 1;
-  if (monthlyRate <= 0 && contribution <= 0) return translations[currentLanguage].unavailable;
-  let balance = assets;
-  let months = 0;
-  while (balance < needed && months < 1200) {
-    balance = balance * (1 + monthlyRate) + contribution;
-    months += 1;
-  }
-  if (months >= 1200) return translations[currentLanguage].unavailable;
-  const years = Math.floor(months / 12);
-  const remainingMonths = months % 12;
-  const template = years ? translations[currentLanguage].yearsMonths : translations[currentLanguage].monthsOnly;
-  return template.replace("{years}", years).replace("{months}", remainingMonths);
-}
-
-function calculateFreedom() {
-  const assets = value("assets");
-  const contribution = value("contribution");
-  const annualYield = value("yield-rate");
-  const goal = value("goal");
-  const annualGoal = goal * 12;
-  const needed = annualYield > 0 ? annualGoal / (annualYield / 100) : 0;
-  const currentMonthly = assets * (annualYield / 100) / 12;
-  const progress = needed > 0 ? Math.min(100, assets / needed * 100) : 0;
-  const copy = translations[currentLanguage];
-
-  document.getElementById("needed-result").textContent = currency(needed);
-  document.getElementById("income-now-result").textContent = currency(currentMonthly);
-  document.getElementById("goal-progress-result").textContent = `${Math.round(progress)}%`;
-  document.getElementById("time-result").textContent = timeToGoal(assets, contribution, annualYield, needed);
-  document.getElementById("freedom-progress").style.width = `${progress}%`;
-  document.getElementById("freedom-message").textContent = copy.freedomMessage
-    .replace("{goal}", currency(goal))
-    .replace("{annual}", currency(annualGoal));
+  try { localStorage.setItem("ddlp-language", current); } catch { /* The choice still applies to this visit. */ }
 }
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
-document.querySelectorAll('[data-calculator="budget"] input').forEach((input) => input.addEventListener("input", calculateBudget));
-document.querySelectorAll('[data-calculator="freedom"] input').forEach((input) => input.addEventListener("input", calculateFreedom));
 
-if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll(".section-heading, .calculator, .experience-grid, .rule-list, .profile-table").forEach((node) => {
-    node.classList.add("reveal");
-    observer.observe(node);
+// One FAQ answer open at a time keeps the list short on phones.
+const faqItems = document.querySelectorAll(".faq details");
+faqItems.forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (item.open) faqItems.forEach((other) => { if (other !== item) other.open = false; });
   });
-}
+});
 
 document.getElementById("year").textContent = new Date().getFullYear();
-setLanguage(detectLanguage());
+const initial = detectLanguage();
+if (initial !== "pt-BR") setLanguage(initial);
