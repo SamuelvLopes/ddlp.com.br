@@ -175,3 +175,69 @@ faqItems.forEach((item) => {
 document.getElementById("year").textContent = new Date().getFullYear();
 const initial = detectLanguage();
 if (initial !== "pt-BR") setLanguage(initial);
+
+// WebMCP: tools that AI agents in the browser can call to read DDLP's contact
+// details and services, or prepare a WhatsApp message, without scraping the
+// page. Browsers without WebMCP skip this block.
+const DDLP = {
+  whatsapp: "+55 81 3103-8855",
+  whatsappUrl: "https://wa.me/558131038855",
+  email: "comercial@ddlp.com.br",
+  instagram: "https://www.instagram.com/ddlpbr/",
+  site: "https://ddlp.com.br/"
+};
+
+const agentTools = [
+  {
+    name: "get_ddlp_contact",
+    description: "Returns DDLP's contact channels (WhatsApp, e-mail, Instagram, website) and the expected reply time.",
+    inputSchema: { type: "object", properties: {} },
+    annotations: { readOnlyHint: true },
+    execute: async () => [
+      `WhatsApp: ${DDLP.whatsapp} (${DDLP.whatsappUrl})`,
+      `E-mail: ${DDLP.email}`,
+      `Instagram: @ddlpbr (${DDLP.instagram})`,
+      `Site: ${DDLP.site}`,
+      "Resposta em até dois dias úteis, com diagnóstico gratuito."
+    ].join("\n")
+  },
+  {
+    name: "list_ddlp_services",
+    description: "Lists DDLP's services (digital design, lead capture, performance) and plans. Prices are quoted after a free assessment.",
+    inputSchema: { type: "object", properties: {} },
+    annotations: { readOnlyHint: true },
+    execute: async () => [
+      "Design digital: landing pages de conversão, sites institucionais, identidade visual e peças para redes e anúncios.",
+      "Leads: formulários que qualificam, WhatsApp com resposta automática, integração com CRM e funil com etapas claras.",
+      "Performance: gestão de Meta Ads, Google Ads e TikTok Ads; Pixel, GA4 e conversões; testes A/B; relatório mensal.",
+      "Planos: Presença, Captação e Escala. O valor sai depois do diagnóstico gratuito; a verba de anúncios não está inclusa."
+    ].join("\n")
+  },
+  {
+    name: "create_whatsapp_link",
+    description: "Builds a wa.me link that opens a WhatsApp chat with DDLP with the given message pre-filled. It does not send anything.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        message: {
+          type: "string",
+          description: "Message to pre-fill, for example what the user sells and what they need."
+        }
+      },
+      required: ["message"]
+    },
+    annotations: { readOnlyHint: true },
+    execute: async ({ message } = {}) =>
+      `${DDLP.whatsappUrl}?text=${encodeURIComponent(String(message ?? "").slice(0, 1000))}`
+  }
+];
+
+(function registerAgentTools() {
+  const modelContext = document.modelContext || navigator.modelContext;
+  if (!modelContext || typeof modelContext.registerTool !== "function") return;
+  agentTools.forEach((tool) => {
+    try {
+      Promise.resolve(modelContext.registerTool(tool)).catch(() => {});
+    } catch { /* A tool that fails to register must not break the page. */ }
+  });
+})();

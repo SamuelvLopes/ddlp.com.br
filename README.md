@@ -33,6 +33,12 @@ Os estilos base são para celular. Tablet e desktop entram com `min-width: 720px
 - `llms.txt` resume a DDLP para assistentes de IA. Mantenha alinhado com a página.
 - `assets/og.png` (1200×630) é a imagem de compartilhamento.
 
+## Navegação por agentes de IA
+
+- `llms.txt` segue o formato de [llmstxt.org](https://llmstxt.org/): título H1, resumo em citação e seções com links em Markdown. O Lighthouse reprova o arquivo se faltar o H1 ou os links.
+- `script.js` registra ferramentas [WebMCP](https://developer.chrome.com/docs/ai/webmcp) (`get_ddlp_contact`, `list_ddlp_services`, `create_whatsapp_link`) para agentes no navegador. Navegadores sem WebMCP ignoram esse trecho.
+- Rode o Lighthouse em uma janela anônima (ou no PageSpeed Insights): extensões do navegador injetam elementos na página e geram falsos erros de acessibilidade.
+
 ## Idiomas
 
 O português é o idioma-fonte. Inglês e espanhol ficam no objeto `translations` em `script.js`, ligados pelos atributos `data-i18n`. Ao adicionar um texto novo, crie a chave nos dois dicionários.
